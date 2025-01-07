@@ -14,4 +14,9 @@ CrossRef then either registers the DOI, or returns an error message.
 
 These error message take the form of emails that are sent to the Support mailbox at AUP. (The site admin can choose where they are sent).
 
-There is currently no procedure for dealing with these error message, and no one is dealing with them. This needs too change, but how?
+There is currently no procedure for dealing with these error message, and no one is dealing with them. This needs to change, but how?
+
+## see also
+
+- [DOI Registration Errors](https://amsterdamuniversitypress.github.io/content-loading/doiregistrationerrors)
+
