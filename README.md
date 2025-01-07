@@ -19,6 +19,7 @@ how to load content onto AUP Online?
 - [Content Identifiers](https://amsterdamuniversitypress.github.io/content-loading/contentidentifiers)
 - [Delayed Open Access](https://amsterdamuniversitypress.github.io/content-loading/delayedopenaccess)
 - [DOI Registration](https://amsterdamuniversitypress.github.io/content-loading/doiregistration)
+- [DOI Registration Errors](https://amsterdamuniversitypress.github.io/content-loading/doiregistrationerrors)
 - [eCommerce](https://amsterdamuniversitypress.github.io/content-loading/ecommerce)
 - [Editor](https://amsterdamuniversitypress.github.io/content-loading/editor)
 - [JATS](https://amsterdamuniversitypress.github.io/content-loading/jats)
