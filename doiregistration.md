@@ -16,6 +16,11 @@ These error message take the form of emails that are sent to the Support mailbox
 
 There is currently no procedure for dealing with these error message, and no one is dealing with them. This needs to change, but how?
 
+## submitting DOIs
+DOIs are submitted in the form of an XML file containing metadata of the publication. Example below.
+
+- https://gitlab.com/crossref/schema/-/blob/master/best-practice-examples/journal.article5.3.0.xml
+
 ## see also
 
 - [DOI Registration Errors](https://amsterdamuniversitypress.github.io/platform-documentation/doiregistrationerrors)
