@@ -41,6 +41,6 @@ There are four folders on the prod SFTP:
 - journals-articles-live
 - magazine
 
-!{}(aup-online-sftp.png)
+![](aup-online-sftp.png)
 
 See [SFTP](sftp.md)
