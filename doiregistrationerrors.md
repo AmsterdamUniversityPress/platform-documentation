@@ -29,19 +29,15 @@ Other sorts of errors are much more rare: corrupt DOIs, corrupt registrant,  mis
 
 Example 1. GO2024.1.006.ENGE. Corrupt ORCID. On top the CrossRef XML as it is returned in the error message. Below the JATS.
 
-![](example1-GO2024.1.006.ENGE-corruptorcid-jats.png)
-
-<!--
-![](https://github.com/AmsterdamUniversityPress/platform-documentation/blob/f3b54dc1ed971702b87f40c326523e66488f8834/example1-GO2024.1.006.ENGE-corruptorcid-crossref-error.png)
--->
-
 ![](example1-GO2024.1.006.ENGE-corruptorcid-crossref-error.png)
 
-Example 2. TVA2024.4.005.COLL Missing authorname. On top the CrossRef XML as it is returned in the error message. Below the JATS.
+![](example1-GO2024.1.006.ENGE-corruptorcid-jats.png)
 
-![](example2-TVA2024.4.005.COLL-noauthname-jats.png)
+Example 2. TVA2024.4.005.COLL. Missing authorname. On top the CrossRef XML as it is returned in the error message. Below the JATS.
 
 ![](example2-TVA2024.4.005.COLL-noauthname-crossref-error.png)
+
+![](example2-TVA2024.4.005.COLL-noauthname-jats.png)
 
 ## schema
 The CrossRef XML is validated again an online schema, http://www.crossref.org/schema/4.4.2. The schema - in this case, version 4.4.2 -  is referenced in the CrossRef XML:
