@@ -9,17 +9,15 @@ The Shibboleth Internet2 middleware initiative created an architecture and open-
 
 ## platform admin
 
-- https://confluence.ingenta.com/confluence/display/AUP/UK+Shibboleth+Federation | UK Shibboleth Federation
-- https://confluence.ingenta.com/confluence/display/AUP/UK+Shibboleth+Federation#UKShibbolethFederation-OngoingsetupofnewinstitutionsforShibboleth | Ongoing setup of new institutions for Shibboleth
-
-
-- https://confluence.ingenta.com/confluence/display/AUP/User+Management+Tool#UserManagementTool-6.2.6AmendShibbolethforanorganization | Amend Shibboleth for an organization
-- https://confluence.ingenta.com/confluence/display/AUP/User+Management+Tool#UserManagementTool-6.2.7AddShibbolethfororganization | Add Shibboleth for organization
+|     |     |
+|-----|-----|
+| https://confluence.ingenta.com/confluence/display/AUP/UK+Shibboleth+Federation | UK Shibboleth Federation |
+| https://confluence.ingenta.com/confluence/display/AUP/UK+Shibboleth+Federation#UKShibbolethFederation-OngoingsetupofnewinstitutionsforShibboleth | Ongoing setup of new institutions for Shibboleth |
+| https://confluence.ingenta.com/confluence/display/AUP/User+Management+Tool#UserManagementTool-6.2.6AmendShibbolethforanorganization | Amend Shibboleth for an organization |
+| https://confluence.ingenta.com/confluence/display/AUP/User+Management+Tool#UserManagementTool-6.2.7AddShibbolethfororganization | Add Shibboleth for organization |
+| https://confluence.ingenta.com/confluence/display/AUP/Institutional+Administrators+FAQs#InstitutionalAdministratorsFAQs-EnableOpenAthensforyourinstitution | nable Shibboleth for your institution | 
 
 ## for institutional admins
-Enable Shibboleth for your institution
+Enable Shibboleth for your institution as follows:
+
 Click on the Shibboleth link within the "Authentication" section in your administrator dashboard. It will take you to a form for setting up your Shibboleth profile. You can select their institution through the institutions drop-down below and click on the "Change institution" button at the bottom of the form to save your profile.
-
-
-- https://confluence.ingenta.com/confluence/display/AUP/Institutional+Administrators+FAQs#InstitutionalAdministratorsFAQs-EnableOpenAthensforyourinstitution
-- 
