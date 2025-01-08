@@ -253,7 +253,7 @@ For example
 `<self-uri content-type="epub" xlink:href="abc.epub" />`
 
 ## Tables, figures, and graphics
-Please refer to [media](media.md)
+Please refer to [media](media.md).
 
 <!-- 
 Hi Crius Group, I apologise for the extreme delay in response to this ticket.
