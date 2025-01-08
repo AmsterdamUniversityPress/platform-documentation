@@ -1,39 +1,52 @@
-# content-loading
-how to load content onto AUP Online?
+# Platform Documentation
+This is a how-to and explainer of things to do with AUP Online. Work in progress.
 
-## toc
+## Table of Contents
 
-### publication types
+### content / publication types
 - [Books](https://amsterdamuniversitypress.github.io/content-loading/books)
+- [Collections](https://amsterdamuniversitypress.github.io/content-loading/collections)
 - [Conference Proceedings](https://amsterdamuniversitypress.github.io/content-loading/conferenceproceedings)
 - [Journals](https://amsterdamuniversitypress.github.io/content-loading/journals)
 - [Magazines](https://amsterdamuniversitypress.github.io/content-loading/magazines)
+- [Publication types](https://amsterdamuniversitypress.github.io/content-loading/publicationtypes)
+- [Series](https://amsterdamuniversitypress.github.io/content-loading/series)
 
-### subjects
+### loading
+- [Loading](https://amsterdamuniversitypress.github.io/content-loading/loading)
+
+### adding / changing pages
 - [Adding new pages](https://amsterdamuniversitypress.github.io/content-loading/addingnewpages)
-- [Accessibility](https://amsterdamuniversitypress.github.io/content-loading/accessibility)
-- [BITS](https://amsterdamuniversitypress.github.io/content-loading/bits)
 - [Changing news items](https://amsterdamuniversitypress.github.io/content-loading/changingnewsitems)
+- [Editor](https://amsterdamuniversitypress.github.io/content-loading/editor)
+- [Pages](https://amsterdamuniversitypress.github.io/content-loading/pages)
+- [Updating the journals price list](https://amsterdamuniversitypress.github.io/content-loading/updatingjournalspricelist)
+
+### XML
+- [BITS](https://amsterdamuniversitypress.github.io/content-loading/bits)
+- [JATS](https://amsterdamuniversitypress.github.io/content-loading/jats)
+- [ONIX](https://amsterdamuniversitypress.github.io/content-loading/onix)
+
+### other subjects
+- [Accessibility](https://amsterdamuniversitypress.github.io/content-loading/accessibility)
 - [Citations and References](https://amsterdamuniversitypress.github.io/content-loading/citationsreferences)
-- [Collections](https://amsterdamuniversitypress.github.io/content-loading/collections)
 - [Content Identifiers](https://amsterdamuniversitypress.github.io/content-loading/contentidentifiers)
-- [Delayed Open Access](https://amsterdamuniversitypress.github.io/content-loading/delayedopenaccess)
 - [DOI Registration](https://amsterdamuniversitypress.github.io/content-loading/doiregistration)
 - [DOI Registration Errors](https://amsterdamuniversitypress.github.io/content-loading/doiregistrationerrors)
 - [eCommerce](https://amsterdamuniversitypress.github.io/content-loading/ecommerce)
-- [Editor](https://amsterdamuniversitypress.github.io/content-loading/editor)
-- [JATS](https://amsterdamuniversitypress.github.io/content-loading/jats)
-- [Licenses](https://amsterdamuniversitypress.github.io/content-loading/licenses)
-- [Loading](https://amsterdamuniversitypress.github.io/content-loading/loading)
-- [Media](https://amsterdamuniversitypress.github.io/content-loading/media)
-- [Pages](https://amsterdamuniversitypress.github.io/content-loading/pages)
 - [Personal data](https://amsterdamuniversitypress.github.io/content-loading/personaldata)
-- [Publication types](https://amsterdamuniversitypress.github.io/content-loading/publicationtypes)
-- [Series](https://amsterdamuniversitypress.github.io/content-loading/series)
+
+### licenses
+- [Delayed Open Access](https://amsterdamuniversitypress.github.io/content-loading/delayedopenaccess)
+- [Licenses](https://amsterdamuniversitypress.github.io/content-loading/licenses)
+
+## media / supplements
+- [Media](https://amsterdamuniversitypress.github.io/content-loading/media)
 - [Supplements](https://amsterdamuniversitypress.github.io/content-loading/supplements)
-- [Sushi](https://amsterdamuniversitypress.github.io/content-loading/sushi)
 - [Uploading images](https://amsterdamuniversitypress.github.io/content-loading/uploadingimages)
-- [Updating the journals price list](https://amsterdamuniversitypress.github.io/content-loading/updatingjournalspricelist)
+
+### usage
+- [Sushi](https://amsterdamuniversitypress.github.io/content-loading/sushi)
 - [Usage](https://amsterdamuniversitypress.github.io/content-loading/usage)
 
 ### access
@@ -43,7 +56,7 @@ how to load content onto AUP Online?
 - [Setting up access](https://amsterdamuniversitypress.github.io/content-loading/settingupaccess)
 - [Shibboleth](https://amsterdamuniversitypress.github.io/content-loading/shibboleth)
 - [SSO](https://amsterdamuniversitypress.github.io/content-loading/sso)
-- [OOpen Access](https://amsterdamuniversitypress.github.io/content-loading/openaccess)
+- [Open Access](https://amsterdamuniversitypress.github.io/content-loading/openaccess)
 
 ### imprints
 - [Imprints](https://amsterdamuniversitypress.github.io/content-loading/imprints)
@@ -51,10 +64,7 @@ how to load content onto AUP Online?
 ### see also
 - [Resources](https://amsterdamuniversitypress.github.io/content-loading/resources)
 
-
-## not related to loading (knowledge base)
-- [ONIX](https://amsterdamuniversitypress.github.io/content-loading/onix)
-
+<!--
 ## webinar
 - [webinar-20240606](https://amsterdamuniversitypress.github.io/content-loading/webinar-20240606)
 
@@ -65,3 +75,4 @@ how to load content onto AUP Online?
 - dealing with the FTP
 - dealing with the site
 - procedures (DOI registration, archiving, supplements)
+-->
