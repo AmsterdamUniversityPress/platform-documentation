@@ -14,7 +14,7 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 
 ### loading
 - [Loading](https://amsterdamuniversitypress.github.io/platform-documentation/loading)
-- [SFTP(sftp.md)
+- [SFTP](sftp.md)
 
 ### adding / changing pages
 - [Adding new pages](https://amsterdamuniversitypress.github.io/platform-documentation/addingnewpages)
