@@ -2,7 +2,7 @@
 # Problems in DOI registration with CrossRef
 
 ## context
-The AUP Online platform handles the [DOI Registration](https://amsterdamuniversitypress.github.io/content-loading/doiregistration) for AUP content as part of its so-called "distribution" function. This means that an XML file with metadata is sent to a DOI registrar - CrossRef in this case. This "CrossRef" XML is produced by converting the JATS XML that is used to upload content to the platform. This JATS (or BITS) XML contains, among other information, the DOI created by the AUP typesetters. _Created_ - not yet registered.
+The AUP Online platform handles the [DOI Registration](https://amsterdamuniversitypress.github.io/platform-documentation/doiregistration) for AUP content as part of its so-called "distribution" function. This means that an XML file with metadata is sent to a DOI registrar - CrossRef in this case. This "CrossRef" XML is produced by converting the JATS XML that is used to upload content to the platform. This JATS (or BITS) XML contains, among other information, the DOI created by the AUP typesetters. _Created_ - not yet registered.
 
 Four possibilities now arise:
 1. the CrossRef XML is valid and the DOI is registered. No notification is sent by CrossRef.
@@ -70,10 +70,10 @@ xmlns:ai="http://www.crossref.org/AccessIndicators.xsd">
 
 CrossRef has extensive documentation. Relevant links:
 
-- https://www.crossref.org/documentation/schema-library/
-- https://www.crossref.org/documentation/schema-library/metadata-deposit-schema-4-4-2/ 
+- [schema-library](https://www.crossref.org/documentation/schema-library/)
+- [metadata-deposit-schema-4-4-2](https://www.crossref.org/documentation/schema-library/metadata-deposit-schema-4-4-2/) 
 
-The schema can be downloaded here: https://gitlab.com/crossref/schema/-/tree/master/schemas?ref_type=heads 
+The schema can be downloaded [from the CrossRef GitLab](https://gitlab.com/crossref/schema/-/tree/master/schemas?ref_type=heads).
 
 ## fixes
 How to fix this? Automated checks. Either before JATS is created, or during (Schematron), depending on the workflow.
@@ -85,4 +85,4 @@ How to fix this? Automated checks. Either before JATS is created, or during (Sch
 It should be emphasised once more that CrossRef does not check the JATS. This is not about the JATS. This is about the data _inside_ the JATS tags.
 
 ## see also
-- [DOI Registration](https://amsterdamuniversitypress.github.io/content-loading/doiregistration)
+- [DOI Registration](https://amsterdamuniversitypress.github.io/platform-documentation/doiregistration)
