@@ -18,5 +18,5 @@ There is currently no procedure for dealing with these error message, and no one
 
 ## see also
 
-- [DOI Registration Errors](https://amsterdamuniversitypress.github.io/content-loading/doiregistrationerrors)
+- [DOI Registration Errors](https://amsterdamuniversitypress.github.io/platform-documentation/doiregistrationerrors)
 
