@@ -2,7 +2,7 @@
 
 The platform performs a task called [distribution](distribution.md). This means it sends metadata and content to specified third parties. The site admin can set this up. 
 
-One distribution line set up is to CrossRef. It has at least two purposes: DOI registration and retrieval of [references](references.md). The latter are discussed elsewhere on these pages. This page deals with DOI registration.
+One distribution line set up is to CrossRef. It has at least two purposes: DOI registration and retrieval of [references](citationsreferences.md). The latter are discussed elsewhere on these pages. This page deals with DOI registration.
 
 First, it is good to know that DOIs can be created by anyone (as long as they comply with the specifications). Their _registration_ however, is in the hand of a few third parties, and CrossRef is undoubtedly the most prominent one. 
 
