@@ -29,7 +29,9 @@ Other sorts of errors are much more rare: corrupt DOIs, corrupt registrant,  mis
 
 Example 1. GO2024.1.006.ENGE. Corrupt ORCID. On top the CrossRef XML as it is returned in the error message. Below the JATS.
 
-![example1-GO2024.1.006.ENGE-corruptorcid-jats.png]()
+![](example1-GO2024.1.006.ENGE-corruptorcid-jats.png)
+
+![](https://github.com/AmsterdamUniversityPress/platform-documentation/blob/f3b54dc1ed971702b87f40c326523e66488f8834/example1-GO2024.1.006.ENGE-corruptorcid-crossref-error.png)
 
 ![[example1-GO2024.1.006.ENGE-corruptorcid-crossref-error.png]]
 
