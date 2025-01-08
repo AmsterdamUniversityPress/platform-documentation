@@ -76,7 +76,7 @@ CrossRef has extensive documentation. Relevant links:
 The schema can be downloaded [from the CrossRef GitLab](https://gitlab.com/crossref/schema/-/tree/master/schemas?ref_type=heads).
 
 ## fixes
-How to fix this? Automated checks. Either before JATS is created, or during (e.g., Schematron), depending on the workflow.
+How to fix this? One way is to make sure everybody involved knows about this issue and is aware of the error reports. The other way is automated checks. Either before JATS is created, or during (e.g., Schematron), depending on the workflow.
 
 1. Error 1 is tricky, but a check for number of characters and/or number of white spaces should make a good start
 2. Allow no empty `<aff>` tag (or any other tag, for that matter) in the JATS/BITS. Even if it is valid according to the JATS schema. Also, check for number of characters in this field
