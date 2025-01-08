@@ -31,15 +31,17 @@ Example 1. GO2024.1.006.ENGE. Corrupt ORCID. On top the CrossRef XML as it is re
 
 ![](example1-GO2024.1.006.ENGE-corruptorcid-jats.png)
 
+<!--
 ![](https://github.com/AmsterdamUniversityPress/platform-documentation/blob/f3b54dc1ed971702b87f40c326523e66488f8834/example1-GO2024.1.006.ENGE-corruptorcid-crossref-error.png)
+-->
 
-![[example1-GO2024.1.006.ENGE-corruptorcid-crossref-error.png]]
+![](example1-GO2024.1.006.ENGE-corruptorcid-crossref-error.png)
 
 Example 2. TVA2024.4.005.COLL Missing authorname. On top the CrossRef XML as it is returned in the error message. Below the JATS.
 
-![[example2-TVA2024.4.005.COLL-noauthname-jats.png]]
+![](example2-TVA2024.4.005.COLL-noauthname-jats.png)
 
-![[example2-TVA2024.4.005.COLL-noauthname-crossref-error.png]]
+![](example2-TVA2024.4.005.COLL-noauthname-crossref-error.png)
 
 ## schema
 The CrossRef XML is validated again an online schema, http://www.crossref.org/schema/4.4.2. The schema - in this case, version 4.4.2 -  is referenced in the CrossRef XML:
@@ -78,7 +80,7 @@ CrossRef has extensive documentation. Relevant links:
 The schema can be downloaded [from the CrossRef GitLab](https://gitlab.com/crossref/schema/-/tree/master/schemas?ref_type=heads).
 
 ## fixes
-How to fix this? Automated checks. Either before JATS is created, or during (Schematron), depending on the workflow.
+How to fix this? Automated checks. Either before JATS is created, or during (e.g., Schematron), depending on the workflow.
 
 1. Error 1 is tricky, but a check for number of characters and/or number of white spaces should make a good start
 2. Allow no empty `<aff>` tag (or any other tag, for that matter) in the JATS/BITS. Even if it is valid according to the JATS schema. Also, check for number of characters in this field
