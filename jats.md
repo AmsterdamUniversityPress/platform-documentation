@@ -206,6 +206,15 @@ For example
     `</contrib>`
 `</contrib-group>`
 
+## Subjects
+Articles can have subjects. They aren't really subjects. They are article **types**. Anyway, in the XML, only **one** subject is allowed. For example
+
+```xml
+<subj-group subj-group-type="heading">
+<subject>Article</subject>
+</subj-group>
+```
+
 ## Keywords
 
 You can define keywords for an article within the XML using the **`kwd`** element. Each keyword must be specified in a separate **`kwd`** element. The **`kwd`** elements are enclosed within a **`kwd-group`** element. For example
