@@ -48,6 +48,7 @@ If a single title is transferred, that title will have DOIs with at least two _d
 
 - [Transferring responsibility for titles and DOIs](https://www.crossref.org/documentation/register-maintain-records/creating-and-managing-dois/transferring-responsibility-for-dois/)
 - [Before, during, and after - a journey through title transfers](https://www.crossref.org/blog/before-during-and-after-a-journey-through-title-transfers/)
+- [Transfer Alerting Service](https://journaltransfer.issn.org/)
 - [The NISO Transfer Code of Practice](https://www.niso.org/standards-committees/transfer)
 
 
