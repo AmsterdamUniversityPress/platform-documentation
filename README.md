@@ -43,7 +43,7 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 - [ISSN](issn.md)
 - [ORCID](orcid.md)
 - [ROR](ror.md)
-- [URL(url.md)
+- [URL](url.md)
 - [URN](urn.md)
 
 ### DOIs
