@@ -34,11 +34,20 @@ After the transfer is complete, it's vital that your organisation doesn't regist
  
 You can learn more about our title transfer process [here](https://www.crossref.org/documentation/register-maintain-records/creating-and-managing-dois/transferring-responsibility-for-dois/). If you have any questions, please don't hesitate to ask.
 
-### a link to our public-facing documentation
-
-- https://www.crossref.org/documentation/register-maintain-records/creating-and-managing-dois/transferring-responsibility-for-dois/
-
-### quick summary
+## quick summary
 1. post a title transfer to ETA
 2. send a title transfer notification to CrossRef
-3. mzke sure all DOIs (of the title) of the disposing publisher are registrered with CrossRef
+3. make sure all DOIs (of the title) of the disposing publisher are registrered with CrossRef
+
+The above only applies if one title is transferred. If _all_ titles are aquired, the disposing publisher's prefix is transferred over to the acquiring publisher.
+
+## note
+If a single title is transferred, that title will have DOIs with at least two _different_ DOI prefixes: the one of the disposing publisher for all content published during that publisher's ownership, and the prefix of the acquiring publisher, for all content published after the moment of acquisition.
+
+## see also
+
+- [Transferring responsibility for titles and DOIs](https://www.crossref.org/documentation/register-maintain-records/creating-and-managing-dois/transferring-responsibility-for-dois/)
+- [Before, during, and after - a journey through title transfers](https://www.crossref.org/blog/before-during-and-after-a-journey-through-title-transfers/)
+
+
+
