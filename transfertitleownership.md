@@ -2,7 +2,7 @@
 
 This is about what to do when AUP acquires a new title, for example a journal. This process has many steps and this page looks at only one of them: how to let [CrossRef](crossref.md) know that the title now has a new owner, so that the DOI registration is handled succesfully and there are no [problems](doiregistrationproblems.md).
 
-So, I sent them en email and they said the following:
+So, I sent them an email and they said the following:
 
 ## official CrossRef response
 We enforce a concept of ownership for the titles that are registered with Crossref. When the first DOI for a title is registered with us by a member, this creates a title record in our system. This title record ties the title to the prefix belonging to that member. The member who owns that prefix is then the only member allowed to create new DOIs for content belonging to that title (or update the metadata on existing DOIs for that title).
