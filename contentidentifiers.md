@@ -1,16 +1,16 @@
-# Content identifiers
+# Content identifiers in JATS/BITS
 
 
 Item | Specification | XML tag or attribute | Example
 ----- | ----- | ----- | -----
-journal URL | based on P ISSN or (secundarily) E ISSN) | `<issn pub-type="ppub">0929-8592</issn>` or `<issn pub-type="epub">2667-1689</issn>` | `https://www.aup-online.com/content/journals/09298592`
+journal URL | based on P [ISSN](issn.md) or (secundarily) E ISSN) | `<issn pub-type="ppub">0929-8592</issn>` or `<issn pub-type="epub">2667-1689</issn>` | `https://www.aup-online.com/content/journals/09298592`
 journal publisher ID | abbreviated title | `<journal-id>`  | `<journal-id journal-id-type="publisher-id">QUE</journal-id>`
 issue URL | Journal URL/volume/issue | n/a | `https://www.aup-online.com/content/journals/09298592/29/1`
-article URL | based on article DOI  | n/a | `https://www.aup-online.com/content/journals/10.5117/QUE2022.1.001.KLEI`
+article URL | based on article [DOI](doi.md)  | n/a | `https://www.aup-online.com/content/journals/10.5117/QUE2022.1.001.KLEI`
 article DOI | DOI | `<article-id>` | `<article-id pub-id-type="doi">10.5117/QUE2022.1.001.KLEI</article-id>`
 article publisher ID | this is the  article ID  | `<article-id>` | `<article-id pub-id-type="publisher-id">QUE2022.1.001.KLEI</article-id>`
 
-Note that currently no identfiers are used for authors (like ORCID) or insitutitions (that authors may be affiliated with) (like ROR).
+Note that currently no identfiers are used for authors (like [ORCID](orcid.md)) or insitutitions (that authors may be affiliated with) (like [ROR](ror.md)).
 
 
 <!-- 
