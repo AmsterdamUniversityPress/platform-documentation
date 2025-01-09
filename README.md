@@ -5,12 +5,12 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 
 ### content / publication types
 - [Books](https://amsterdamuniversitypress.github.io/platform-documentation/books)
-- [Collections](https://amsterdamuniversitypress.github.io/platform-documentation/collections)
+- [Collections](collections.md)
 - [Conference Proceedings](https://amsterdamuniversitypress.github.io/platform-documentation/conferenceproceedings)
 - [Journals](https://amsterdamuniversitypress.github.io/platform-documentation/journals)
 - [Magazines](https://amsterdamuniversitypress.github.io/platform-documentation/magazines)
 - [Publication types](https://amsterdamuniversitypress.github.io/platform-documentation/publicationtypes)
-- [Series](https://amsterdamuniversitypress.github.io/platform-documentation/series)
+- [Series](series.md)
 
 ### loading
 - [Loading](https://amsterdamuniversitypress.github.io/platform-documentation/loading)
