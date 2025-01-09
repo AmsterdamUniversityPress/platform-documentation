@@ -33,11 +33,14 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 - [Citations and References](https://amsterdamuniversitypress.github.io/platform-documentation/citationsreferences)
 - [Distribution](distribution.md)
 - [Content Identifiers](https://amsterdamuniversitypress.github.io/platform-documentation/contentidentifiers)
-- [DOI Registration](https://amsterdamuniversitypress.github.io/platform-documentation/doiregistration)
-- [DOI Registration Errors](https://amsterdamuniversitypress.github.io/platform-documentation/doiregistrationerrors)
 - [eCommerce](https://amsterdamuniversitypress.github.io/platform-documentation/ecommerce)
 - [Edify](edify.md)
 - [Personal data](https://amsterdamuniversitypress.github.io/platform-documentation/personaldata)
+
+### DOIs
+- [DOI Registration](doiregistration.md)
+- [DOI Registration Errors](doiregistrationerrors.md)
+- [Transfer Title Ownership](transfertitleownershio.md)
 
 ### licenses
 - [Delayed Open Access](https://amsterdamuniversitypress.github.io/platform-documentation/delayedopenaccess)
