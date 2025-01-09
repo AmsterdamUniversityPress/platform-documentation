@@ -40,7 +40,7 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 ### DOIs
 - [DOI Registration](doiregistration.md)
 - [DOI Registration Errors](doiregistrationerrors.md)
-- [Transfer Title Ownership](transfertitleownershio.md)
+- [Transfer Title Ownership](transfertitleownership.md)
 
 ### licenses
 - [Delayed Open Access](https://amsterdamuniversitypress.github.io/platform-documentation/delayedopenaccess)
