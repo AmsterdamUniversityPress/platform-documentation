@@ -1,13 +1,13 @@
 # Transfer Title Ownership with CrossRef
 
-This is about what to do when AUP acquires a new title, for example a journal. This process has many steps and this page looks at only one of them: how to let CrossRef know that the title now has a new owner, so that the DOI registration is handled succesfully and there are no [problems](doiregistrationproblems.md).
+This is about what to do when AUP acquires a new title, for example a journal. This process has many steps and this page looks at only one of them: how to let [CrossRef](crossref.md) know that the title now has a new owner, so that the DOI registration is handled succesfully and there are no [problems](doiregistrationproblems.md).
 
 So, I sent them en email and they said the following:
 
 ## official CrossRef response
 We enforce a concept of ownership for the titles that are registered with Crossref. When the first DOI for a title is registered with us by a member, this creates a title record in our system. This title record ties the title to the prefix belonging to that member. The member who owns that prefix is then the only member allowed to create new DOIs for content belonging to that title (or update the metadata on existing DOIs for that title).
  
-If that title is then acquired by a member with a different prefix, we have the option to transfer ownership of that title in the Crossref system to the other member's prefix, but we need a title transfer notification to confirm that the disposing publisher approves the move.]
+If that title is then acquired by a member with a different prefix, we have the option to transfer ownership of that title in the Crossref system to the other member's prefix, but **we need a title transfer notification** to confirm that the disposing publisher approves the move.]
  
 The title you mentioned is currently owned by (`<insert disposing publisher name>`) in the Crossref system. We need title transfer notification to confirm that they are happy with the transfer. There are several different ways to do this.
  
@@ -37,3 +37,8 @@ You can learn more about our title transfer process [here](https://www.crossref.
 ### a link to our public-facing documentation
 
 - https://www.crossref.org/documentation/register-maintain-records/creating-and-managing-dois/transferring-responsibility-for-dois/
+
+### quick summary
+1. post a title transfer to ETA
+2. send a title transfer notification to CrossRef
+3. mzke sure all DOIs (of the title) of the disposing publisher are registrered with CrossRef
