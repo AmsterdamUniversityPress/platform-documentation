@@ -19,3 +19,6 @@ Currently the following distributiuon channels are set up:
 - ExLibris (CDI/Primo/Summon)
 - CEPIEC
 - Portico
+
+## tip
+- resaving an issue retriggers the distribution of that issue. (Editing and then saving an issue is something the site admin can do). Simply resaving an article does _not_ trigger distribution. 
