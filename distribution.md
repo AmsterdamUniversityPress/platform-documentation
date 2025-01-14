@@ -21,4 +21,4 @@ Currently the following distributiuon channels are set up:
 - Portico
 
 ## tip
-- resaving an issue retriggers the distribution of that issue. (Editing and then saving an issue is something the site admin can do). Simply resaving an article does _not_ trigger distribution. 
+- resaving an issue retriggers the distribution of that issue. (Editing and then saving an issue is something the site admin can do). Simply resaving an article does _not_ trigger distribution. (This at least, is the current configuration of the AUP Edify instance).
