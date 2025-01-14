@@ -1,9 +1,5 @@
 # how to take over a title from another publisher?
 
-
-
-
-
 ## Warning
 There are cases where the title ownership has to be transferred with CrossRef, **even if AUP is already the owner** of the title.
 
