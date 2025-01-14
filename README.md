@@ -78,6 +78,10 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 ### imprints
 - [Imprints](https://amsterdamuniversitypress.github.io/platform-documentation/imprints)
 
+### procedures
+- [how to publish a new journal online](newonlinepublication.md)
+- [how to take over a title from another publiser](acquiringatitle.md)
+
 ### see also
 - [Resources](https://amsterdamuniversitypress.github.io/platform-documentation/resources)
 
