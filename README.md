@@ -34,6 +34,7 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 - [Distribution](distribution.md)
 - [eCommerce](https://amsterdamuniversitypress.github.io/platform-documentation/ecommerce)
 - [Edify](edify.md)
+- [Out of issue](outofissue.md)
 - [Personal data](https://amsterdamuniversitypress.github.io/platform-documentation/personaldata)
 
 ### identifiers
