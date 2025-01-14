@@ -55,6 +55,7 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 ### licenses
 - [Delayed Open Access](https://amsterdamuniversitypress.github.io/platform-documentation/delayedopenaccess)
 - [Licenses](https://amsterdamuniversitypress.github.io/platform-documentation/licenses)
+- [Setting Prices](settingprices.md)
 
 ## media / supplements
 - [Media](https://amsterdamuniversitypress.github.io/platform-documentation/media)
