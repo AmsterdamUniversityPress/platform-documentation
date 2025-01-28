@@ -177,7 +177,7 @@ Attributes in JATS/BITS that enhance accessibility:
 - `@xlink:href`: Links to external resources or internal references.
 - `@alt`: Brief alternative text for figures and images.
 - `@role`: Specifies the purpose of elements (e.g., @role="doc-chapter").
-- `@xml-lang`
+- `@xml-lang`: Assistive technologies use the @xml:lang attribute to determine pronunciation rules, voice synthesis, and other language-specific behaviors.
 
 #### 5. Tables
 Accessible tables require:
