@@ -1,23 +1,40 @@
 # Accessibility
 
-Does the platform meet global accessibility standards?
+## what is it?
+Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them. 
 
-We have aimed for WCAG 2.0 AA compliance with the Web Accessibility Initiative recommendations (WAI) and compliance with Section 508 Amendment to the Rehabilitation Act of 1973.
-
-- this is in the Librarians' FAQ
-- there is no accessibility page or statement
-- there is no VPAT
-
-- https://en.wikipedia.org/wiki/Voluntary_Product_Accessibility_Template
-- https://www.itic.org/policy/accessibility/vpat/
-
+## standards
+Several standards exist...
 
 ##  EAA
 The European Accessibility Act (EAA), set to be fully implemented by mid-2025, requires digital content, including scientific publications and digital books, to be accessible to individuals with disabilities. 
 
 The act can be found [here](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882).
 
-## JATS
+## what does this mean for the platform?
+Does the platform meet global accessibility standards? The Librarians' FAQ says
+
+> We have aimed for WCAG 2.0 AA compliance with the Web Accessibility Initiative recommendations (WAI) and compliance with Section 508 Amendment to the Rehabilitation Act of 1973.
+
+But...
+- there is no accessibility page or statement
+- there is no VPAT
+
+See also
+- [VPAT on Wikipedia](https://en.wikipedia.org/wiki/Voluntary_Product_Accessibility_Template)
+- [VPAT on ITIC](https://www.itic.org/policy/accessibility/vpat/)
+
+## what does this mean for the content?
+Let's answers this in terms of formats:
+
+- PDF
+- JATS/BITS XML
+
+## PDF
+...
+
+
+## JATS / BITS XML
 EAA has implications for markup languages like JATS (and BITS), which are widely used in the publishing industry for scholarly articles and books.
 
 The JATS used at AUP has to comply with the four principles of accessibility of websites and mobile applications refered to by EAA:
@@ -78,11 +95,6 @@ Accessible tables require:
 - `<thead>` and `<tbody>`: Logical separation of header and body rows.
 - `<th>` and `<td>`: Column headers and data cells, with @scope or @headers attributes for accessibility.
 - `<summary>`: Provides a concise description of the table.
-
-
-## BITS
-Not much different from JATS :)
-
 
 ## see also
 Search Confluence [here](https://confluence.ingenta.com/confluence/dosearchsite.action?cql=siteSearch+~+%22accessibility%22&queryString=accessibility).
