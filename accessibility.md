@@ -6,7 +6,68 @@ Web accessibility means that websites, tools, and technologies are designed and 
 - [W3C Accessibility Fundamentals Overview](https://www.w3.org/WAI/fundamentals/)
 
 ## standards
-Several standards exist...
+Several standards for accessibility of digital content, products, and services exist:
+
+### 1. WCAG (Web Content Accessibility Guidelines)
+The global standard for making web content accessible to people with disabilities, published by the W3C.
+
+- Latest Version: WCAG 2.1 (2018); WCAG 2.2 (expected 2024); WCAG 3.0 (under development).
+- Core Principles (POUR):
+  - Perceivable: Content must be visible and usable with assistive technologies (e.g., text alternatives for images).
+  - Operable: Interfaces must be navigable using a keyboard or other assistive inputs.
+  - Understandable: Content and interface behavior must be predictable and clear.
+   - Robust: Content must work with a variety of tools, including screen readers.
+- Levels of Conformance: A (minimum), AA (recommended), AAA (highest).
+- ISO/IEC 40500 is the **ISO standard** for WCAG 2.0. Its purpose is to provide international recognition and alignment of WCAG as a formal accessibility standard.
+
+
+### 2. EN 301 549
+The European standard for ICT (Information and Communication Technology) accessibility, harmonized with WCAG 2.1.
+
+- Focus: Broader than WCAG, covering software, hardware, websites, and mobile applications.
+- Purpose: Required for public procurement in the EU under the EEA.
+
+### 3. EPUB Accessibility Specification
+A standard for making EPUB e-books accessible. Based on WCAG 2.1. Key Features:
+
+- Text alternatives for images.
+- Proper navigation (e.g., table of contents, landmarks).
+- Accessibility metadata to indicate conformance.
+- Compliance Standard: EPUB Accessibility 1.1.
+
+### 4. Section 508 (U.S.)
+U.S. federal accessibility standard for ICT, aligned with WCAG 2.0. Key Areas:
+
+- Electronic documents.
+- Software and hardware interfaces.
+- Websites and multimedia.
+- Applicability: Primarily for federal agencies, but widely adopted in the private sector.
+
+### 5. ARIA (Accessible Rich Internet Applications)
+A W3C technical specification to enhance web accessibility, especially for dynamic content.
+
+- Focus: Provides roles, properties, and states to make web applications accessible (e.g., screen-reader-friendly dropdown menus).
+- Best Practice: Use ARIA only when native HTML elements cannot achieve accessibility goals.
+
+### 6. PDF/UA (Universal Accessibility)
+ISO standard for accessible PDFs (ISO 14289-1). Key Features:
+
+- Tagged content for reading order.
+- Descriptive text for images and tables.
+- Structured navigation (e.g., bookmarks).
+
+<!--
+### 7. ADA (Americans with Disabilities Act) Standards
+U.S. law requiring accessibility for public spaces, including digital environments. Legal Basis: While not a specific technical standard, WCAG is often used as the benchmark for compliance.
+
+### 8. BITV (Germany)
+The German federal standard for web accessibility. Based on WCAG 2.1, with specific national adaptations.
+
+### 9. ATAG (Authoring Tool Accessibility Guidelines)
+A W3C standard for making content creation tools accessible. Goals:
+- Ensure tools can be used by people with disabilities.
+- Ensure tools help authors create accessible content.
+-->
 
 ##  EAA
 The European Accessibility Act (EAA), set to be fully implemented by mid-2025, requires digital content, including scientific publications and digital books, to be accessible to individuals with disabilities. 
@@ -74,6 +135,8 @@ Ensure all non-text content is described:
 - `<long-desc>`: Used for extended descriptions of complex images, graphs, or charts.
 - `<caption>`: Short description for figures and tables.
 
+https://jats.nlm.nih.gov/archiving/tag-library/1.4/element/alt-text.html
+
 #### 3. Semantics and Metadata
 Provide additional context for better comprehension:
 
@@ -90,6 +153,7 @@ Attributes in JATS/BITS that enhance accessibility:
 - `@xlink:href`: Links to external resources or internal references.
 - `@alt`: Brief alternative text for figures and images.
 - `@role`: Specifies the purpose of elements (e.g., @role="doc-chapter").
+- `@xml-lang`
 
 #### 5. Tables
 Accessible tables require:
