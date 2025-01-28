@@ -19,13 +19,14 @@ The global standard for making web content accessible to people with disabilitie
    - Robust: Content must work with a variety of tools, including screen readers.
 - Levels of Conformance: A (minimum), AA (recommended), AAA (highest).
 - ISO/IEC 40500 is the **ISO standard** for WCAG 2.0. Its purpose is to provide international recognition and alignment of WCAG as a formal accessibility standard.
-
+- Documentation: [WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
 ### 2. EN 301 549
 The European standard for ICT (Information and Communication Technology) accessibility, harmonized with WCAG 2.1.
 
 - Focus: Broader than WCAG, covering software, hardware, websites, and mobile applications.
 - Purpose: Required for public procurement in the EU under the EEA.
+- [Documentation](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf)
 
 ### 3. EPUB Accessibility Specification
 A standard for making EPUB e-books accessible. Based on WCAG 2.1. Key Features:
@@ -33,7 +34,7 @@ A standard for making EPUB e-books accessible. Based on WCAG 2.1. Key Features:
 - Text alternatives for images.
 - Proper navigation (e.g., table of contents, landmarks).
 - Accessibility metadata to indicate conformance.
-- Compliance Standard: EPUB Accessibility 1.1.
+- [EPUB Accessibility 1.1](https://www.w3.org/publishing/epub3/#bib-epub-a11y-11) is the accessibility specification for EPUB3
 
 ### 4. Section 508 (U.S.)
 U.S. federal accessibility standard for ICT, aligned with WCAG 2.0. Key Areas:
@@ -42,19 +43,22 @@ U.S. federal accessibility standard for ICT, aligned with WCAG 2.0. Key Areas:
 - Software and hardware interfaces.
 - Websites and multimedia.
 - Applicability: Primarily for federal agencies, but widely adopted in the private sector.
+- [Documentation](https://www.section508.gov/)
 
 ### 5. ARIA (Accessible Rich Internet Applications)
 A W3C technical specification to enhance web accessibility, especially for dynamic content.
 
 - Focus: Provides roles, properties, and states to make web applications accessible (e.g., screen-reader-friendly dropdown menus).
 - Best Practice: Use ARIA only when native HTML elements cannot achieve accessibility goals.
+- [Documentation](https://www.w3.org/TR/wai-aria-1.1/)
 
-### 6. PDF/UA (Universal Accessibility)
-ISO standard for accessible PDFs (ISO 14289-1). Key Features:
+### 6. PDF/UA-1 (Universal Accessibility)
+UA stands for _universally accessibility_. This is a subtype of PDF/1.7, meant to comply with WCAG2. Key Features:
 
 - Tagged content for reading order.
 - Descriptive text for images and tables.
 - Structured navigation (e.g., bookmarks).
+- [ISO standard for accessible PDFs (ISO 14289-1:2014)](https://www.iso.org/standard/64599.html)
 
 <!--
 ### 7. ADA (Americans with Disabilities Act) Standards
