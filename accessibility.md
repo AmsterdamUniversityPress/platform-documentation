@@ -3,6 +3,8 @@
 ## what is it?
 Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them. 
 
+- [W3C Accessibility Fundamentals Overview](https://www.w3.org/WAI/fundamentals/)
+
 ## standards
 Several standards exist...
 
@@ -96,5 +98,30 @@ Accessible tables require:
 - `<th>` and `<td>`: Column headers and data cells, with @scope or @headers attributes for accessibility.
 - `<summary>`: Provides a concise description of the table.
 
+### example
+
+```xml
+<fig id="fg-3">
+ <caption>
+  <p>Picture with a Positive Association</p>
+ </caption>
+ <graphic xlink:href="frontView.png">
+  <alt-text>Collie puppy image</alt-text>
+ </graphic>
+</fig>
+```
+
+```xml
+<fig id="fig1">
+<label>Diagram 1.</label>
+<caption><title>Kwantitatief overzicht nominale kernen</title></caption>
+<graphic xlink:href="QUE2022.1.001.KLEI_fig1.jpg"/>
+</fig>
+```
+
+- why is title used instead of p?
+- what is the function of label?
+- 
+  
 ## see also
 Search Confluence [here](https://confluence.ingenta.com/confluence/dosearchsite.action?cql=siteSearch+~+%22accessibility%22&queryString=accessibility).
