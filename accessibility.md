@@ -18,12 +18,12 @@ The European Accessibility Act (EAA), set to be fully implemented by mid-2025, r
 The act can be found [here](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882).
 
 ## JATS
-EAA has implications for markup languages like JATS (Jand BITS), which are widely used in the publishing industry for scholarly articles and books.
+EAA has implications for markup languages like JATS (and BITS), which are widely used in the publishing industry for scholarly articles and books.
 
-The JATS used at AUP has to comply with the four principles of accessibility of websites and mobile applicationrefered to by EAA:
+The JATS used at AUP has to comply with the four principles of accessibility of websites and mobile applications refered to by EAA:
 
 1. Perceivable information and user interface components: Text alternatives for non-text content (e.g., images, tables). Logical structure for content (headings, lists, etc.).
-2. Operable interface: Navigation and interaction through structural tagging (e.g., <sec>, <p>).
+2. Operable interface: Navigation and interaction through structural tagging (e.g., `<sec>`, `<p>`).
 3. Understandable content and interface: Clear labeling and hierarchical structure. Descriptive metadata.
 4. Robustness: Compatibility with assistive technologies (e.g., screen readers) and other user agents
 
