@@ -354,5 +354,7 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
 </table-wrap>
 ```
 
+Again: if the JATS is not accessible, the HTML cannot be accessible either. We need to fix the JATS and re-upload the content. THen, we need to check if the HTML is accessible.
+
 ## see also
 Search Confluence [here](https://confluence.ingenta.com/confluence/dosearchsite.action?cql=siteSearch+~+%22accessibility%22&queryString=accessibility).
