@@ -284,15 +284,16 @@ There are some issues with this XML:
 - the table lacks table headers, i.e. `<thead>` and `<th>` elements
 - it is missing a description, i.e. a `<caption>` inside `<table>`, or `<title>` inside `<table-wrap>`
 - it is missing row grouping (making it harder to navigate), i.e. `<thead>` and `<tfoot>` are absent
+- there is no structural markup for subcategories. Consider using `<list>` elements instead of having item numbers in the `<td>`.
 
-It may also make sense to explicitly associate `<td>` cells with column meaning. For simple tables, `<th scope="col">` is enough. For complex tables, use `<td headers="id_of_th">`. Lastly, there is no structural markup for subcategories. Consider using `<list>` elements instead of having numbers in the `<td>`.
+It may also make sense to explicitly associate `<td>` cells with column meaning. For simple tables, `<th scope="col">` is enough. For complex tables, use `<td headers="id_of_th">`.
 
 ### correct XML
 ```xml
 <table-wrap id="tab1">
-  <title>Definitions of Historical Dutch Terms for Women</title>
+  <title><italic>Maget, wijf</italic> en <italic>vrouwe</italic> in nominale aanspreekvormen: het corpus</title>
   <table id="table1" width="1*">
-    <caption>Definitions of historical Dutch terms for different categories of women in historical Dutch texts.</caption>
+    <caption>Het <sc>mnw</sc> geeft de volgende betekenissen voor de zelfstandige naamwoorden <italic>maget, wijf</italic> en <italic>vrouwe</italic></caption>
     <colgroup>
       <col width="0.20*"/>
       <col width="0.80*"/>
@@ -333,27 +334,25 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
         <td>
           <list list-type="order">
             <list-item><italic>Gebiedster, heerscheres, landsvrouwe</italic></list-item>
-            <list-item><italic>Van Maria, de hemelkoningin</italic>, ndl. „onze lieve <italic>Vrouw</italic>”</list-item>
+            <list-item>Van <italic>Maria, de hemelkoningin</italic>, ndl. &#x201E;onze lieve <italic>Vrouw</italic>&#x201D;</list-item>
             <list-item><italic>Meesteres</italic></list-item>
-            <list-item>Als uitdrukking voor <italic>de hoogste, voornaamste, uitstekendste, beste in een soort</italic></list-item>
-            <list-item>Gebruik als <italic>deftige dame, vrouw van hooge geboorte of van aanzienlijken stand</italic></list-item>
+            <list-item>Van zaken en dingen gezegd heeft vrouwe de bet. van <italic>de hoogste, voornaamste, uitstekendste, beste in eene soort</italic></list-item>
+            <list-item>Vrouwe wordt de uitdrukking voor <italic>deftige dame, vrouw van hooge geboorte of van aanzienlijken stand</italic>, ook <italic>edelvrouw</italic></list-item>
             <list-item><italic>Vrouw</italic> in het algemeen, hetzelfde als wijf</list-item>
-            <list-item><italic>Echtgenoot, vrouw van, huisvrouw</italic></list-item>
-            <list-item>In samenstellingen met de betekenis <italic>opzichteres</italic></list-item>
+            <list-item><italic>Vrouw, echtgenoot, vrouw van, huisvrouw</italic></list-item>
+            <list-item>Als tweede lid van eene samenstelling komt vrouwe voor in woorden, waar het de bet. <italic>opzichteres</italic> heeft</list-item>
           </list>
         </td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
-        <td colspan="2">Bron: Historische Nederlandse teksten</td>
+        <td colspan="2">Bron: <sc>mnw</sc></td>
       </tr>
     </tfoot>
   </table>
 </table-wrap>
 ```
-
-
 
 ## see also
 Search Confluence [here](https://confluence.ingenta.com/confluence/dosearchsite.action?cql=siteSearch+~+%22accessibility%22&queryString=accessibility).
