@@ -283,6 +283,7 @@ There are some issues with this XML:
 
 - the table lacks table headers, i.e. `<thead>` and `<th>` elements
 - it is missing a description, i.e. a `<caption>` inside `<table>`, or `<title>` inside `<table-wrap>`
+- because this table contains textual information, a language tag (`xml:lang="nl"`) should be added
 - it is missing row grouping (making it harder to navigate), i.e. `<thead>` and `<tfoot>` are absent
 - there is no structural markup for subcategories. Consider using `<list>` elements instead of having item numbers in the `<td>`.
 
@@ -290,7 +291,7 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
 
 ### correct XML
 ```xml
-<table-wrap id="tab1">
+<table-wrap id="tab1" xml:lang="nl">
   <title><italic>Maget, wijf</italic> en <italic>vrouwe</italic> in nominale aanspreekvormen: het corpus</title>
   <table id="table1" width="1*">
     <caption>Het <sc>mnw</sc> geeft de volgende betekenissen voor de zelfstandige naamwoorden <italic>maget, wijf</italic> en <italic>vrouwe</italic></caption>
@@ -357,9 +358,12 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
 #### Summary of fixes:
 - ✅ Added `<thead>` with `<th>` headers for better screen reader support.
 - ✅ Added `<title>` in `<table-wrap>` and `<caption>` inside `<table>` for clear descriptions.
+- ✅ Added `xml:lang="nl"`
 - ✅ Used `<scope>` attributes in `<th>` to clarify column relationships.
 - ✅ Grouped header and footer properly (`<thead>`, `<tbody>`, `<tfoot>`).
 - ✅ Replaced inline numbered lists with `<list>` elements for semantic clarity.
+
+Note that this table does not need alt text because it is textual. For tables, it is good practice to rely on well-structured content (headers, captions, and a clear arrangement) and use `@alt` and `<alt-text>` for any graphical or complex content that requires additional explanation.
 
 Again: if the JATS is not accessible, the HTML cannot be accessible either. We need to fix the JATS and re-upload the content. THen, we need to check if the HTML is accessible.
 
