@@ -188,17 +188,7 @@ Accessible tables require:
 
 ### example
 
-```xml
-<fig id="fg-3">
- <caption>
-  <p>Picture with a Positive Association</p>
- </caption>
- <graphic xlink:href="frontView.png">
-  <alt-text>Collie puppy image</alt-text>
- </graphic>
-</fig>
-```
-
+### current XML (January 2025)
 ```xml
 <fig id="fig1">
 <label>Diagram 1.</label>
@@ -207,9 +197,53 @@ Accessible tables require:
 </fig>
 ```
 
+#### questions
 - why is title used instead of p?
 - what is the function of label?
-- 
-  
+
+
+### correct XML (in the light of EEA)
+```xml
+<fig id="fig1" xml:lang="nl">
+  <caption>
+    <title>Diagram 1: Kwantitatief overzicht nominale kernen</title>
+  </caption>
+  <graphic xlink:href="QUE2022.1.001.KLEI_fig1.jpg" alt="Diagram 1: Kwantitatief overzicht nominale kernen"/>
+  <alt-text>Dit diagram toont een kwantitatieve analyse van nominale kernen, met een vergelijking van frequenties en patronen.</alt-text>
+</fig>
+```
+
+#### Summary of fixes
+
+- ✅ Added `alt` text for better screen reader support. Use `@alt` or `<alt-text>` if a longer explanation is ndded
+- ✅ Moved the label into `<caption>` for proper structure.
+- ✅ Specified `xml:lang="nl"` for correct pronunciation.
+- ✅ Optional: `<long-desc>` for complex figures.
+
+#### `@alt` vs `<alt-text>`
+Use `@alt` for **simple** alternative text
+- short, concise descriptions (one-liners)
+- place directly inside `<graphic>` or `<inline-graphic>`
+- only plain text (no formatting)
+
+Use `<alt-text>` for **longer** or structured alternative text
+- a separate child element within `<fig>`, `<table-wrap>`, or `<media>`.
+- allows structure/mark-up (e.g. bold, italics, links)
+- use for for complex figures that need detailed descriptions
+
+Use **both**
+- when the JATS XML will be transformed into multiple output formats (e.g. HTML, PDF, EPUB)
+- screen readers will first read `@alt`
+- users needing more details can access `<alt-text>`
+
+#### `<alt-text>`vs `<long-desc>`
+Use `<long-desc>` for detailed, structured descriptions. For example, complex figures, charts, and infographics that require in-depth explanations.
+
+- extensive descriptions, patterns, methodology, interpretation
+- can have multiple paragraphs, hyperlinks, references
+- screen readers do not read it by default but allow users to navigate to it.
+
+In short, use it if an image is highly complex. Combine it with `<alt-text>` so users have a short, immediate summary and can go to the `<long-desc>` for an in-depth explanation.
+
 ## see also
 Search Confluence [here](https://confluence.ingenta.com/confluence/dosearchsite.action?cql=siteSearch+~+%22accessibility%22&queryString=accessibility).
