@@ -354,6 +354,13 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
 </table-wrap>
 ```
 
+#### Summary of fixes:
+- ✅ Added `<thead>` with `<th>` headers for better screen reader support.
+- ✅ Added `<title>` in `<table-wrap>` and `<caption>` inside `<table>` for clear descriptions.
+- ✅ Used `<scope>` attributes in `<th>` to clarify column relationships.
+- ✅ Grouped header and footer properly (`<thead>`, `<tbody>`, `<tfoot>`).
+- ✅ Replaced inline numbered lists with `<list>` elements for semantic clarity.
+
 Again: if the JATS is not accessible, the HTML cannot be accessible either. We need to fix the JATS and re-upload the content. THen, we need to check if the HTML is accessible.
 
 ## see also
