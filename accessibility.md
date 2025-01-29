@@ -186,7 +186,7 @@ Accessible tables require:
 - `<th>` and `<td>`: Column headers and data cells, with @scope or @headers attributes for accessibility.
 - `<summary>`: Provides a concise description of the table.
 
-### example
+## example 1. Figures
 
 ### current XML (January 2025)
 ```xml
@@ -197,10 +197,13 @@ Accessible tables require:
 </fig>
 ```
 
+<!--
 #### questions
 - why is title used instead of p?
 - what is the function of label?
+-->
 
+Note the missing `@alt` attribute for `<graphic>`. Screen readers will not be able to describe the image. Also, `<label>` should not replace `<caption>`. Screen readers will not necessarily read the caption. Lastly, `@xml:lang` is missing for multilingual support.
 
 ### correct XML (in the light of EEA)
 ```xml
@@ -219,6 +222,8 @@ Accessible tables require:
 - ✅ Moved the label into `<caption>` for proper structure.
 - ✅ Specified `xml:lang="nl"` for correct pronunciation.
 - ✅ Optional: `<long-desc>` for complex figures.
+
+Of course, these fixes mean nothing if the HTML generated from the XML is not accessible...
 
 #### `@alt` vs `<alt-text>`
 Use `@alt` for **simple** alternative text
@@ -244,6 +249,111 @@ Use `<long-desc>` for detailed, structured descriptions. For example, complex fi
 - screen readers do not read it by default but allow users to navigate to it.
 
 In short, use it if an image is highly complex. Combine it with `<alt-text>` so users have a short, immediate summary and can go to the `<long-desc>` for an in-depth explanation.
+
+## Example 2. Tables
+
+### current JATS
+
+```xml
+<table-wrap id="tab1">
+<table id="table1" width="1*">
+<colgroup>
+<col width="0.20*"/>
+<col width="0.80*"/>
+</colgroup>
+<tbody>
+<tr>
+<td><italic>Maget</italic></td>
+<td>1) <italic>Volwassen of huwbaar meisje, maagd, jonkvrouw, ongehuwde vrouw</italic>; 2) Ook van <italic>een ongehuwd jonkman, een man</italic> &#x201E;die nie wijf en kende&#x201D;; 3) <italic>Eene ongehuwde vrouw of meisje in dienstbaarheid, dienstmaagd</italic></td>
+</tr>
+<tr>
+<td><italic>Wijf</italic></td>
+<td>1) <italic>Vrouw, vrouwspersoon, vrouw in het algemeen</italic>; ook <italic>jonge vrouw, meisje</italic>; vgl. joncwijf; 2) In ongunstigen zin. <italic>Zedelooze vrouw</italic>; <italic>lichtekooi</italic>; 3) <italic>Gehuwde vrouw</italic>; 4) <italic>Van Maria, de Moeder Gods</italic>; 5) <italic>Echtgenoote, vrouw</italic>; 6) <italic>Het wijfje van een dier</italic>; 7) <italic>Dienstmaagd, dienstbode</italic></td>
+</tr>
+<tr>
+<td><italic>Vrouwe</italic></td>
+<td>1) <italic>Gebiedster, heerscheres, landsvrouwe</italic>; 2) Van <italic>Maria, de hemelkoningin</italic>, ndl. &#x201E;onze lieve <italic>Vrouw</italic>&#x201D;; 3) <italic>Meesteres</italic>; 4) Van zaken en dingen gezegd heeft vrouwe de bet. van <italic>de hoogste, voornaamste, uitstekendste, beste in eene soort</italic>; 5) Vrouwe wordt de uitdrukking voor <italic>deftige dame, vrouw van hooge geboorte of van aanzienlijken stand</italic>, ook <italic>edelvrouw</italic>; 6) <italic>Vrouw</italic> in het algemeen, hetzelfde als wijf; 7) <italic>Vrouw, echtgenoot, vrouw van, huisvrouw</italic> 8) Als tweede lid van eene samenstelling komt vrouwe voor in woorden, waar het de bet. <italic>opzichteres</italic> heeft.</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+```
+
+There are some issues with this XML:
+
+- the table lacks table headers, i.e. `<thead>` and `<th>` elements
+- it is missing a description, i.e. a `<caption>` inside `<table>`, or `<title>` inside `<table-wrap>`
+- it is missing row grouping (making it harder to navigate), i.e. `<thead>` and `<tfoot>` are absent
+
+It may also make sense to explicitly associate `<td>` cells with column meaning. For simple tables, `<th scope="col">` is enough. For complex tables, use `<td headers="id_of_th">`. Lastly, there is no structural markup for subcategories. Consider using `<list>` elements instead of having numbers in the `<td>`.
+
+### correct XML
+```xml
+<table-wrap id="tab1">
+  <title>Definitions of Historical Dutch Terms for Women</title>
+  <table id="table1" width="1*">
+    <caption>Definitions of historical Dutch terms for different categories of women in historical Dutch texts.</caption>
+    <colgroup>
+      <col width="0.20*"/>
+      <col width="0.80*"/>
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">Term</th>
+        <th scope="col">Definitions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><italic>Maget</italic></td>
+        <td>
+          <list list-type="order">
+            <list-item><italic>Volwassen of huwbaar meisje, maagd, jonkvrouw, ongehuwde vrouw</italic></list-item>
+            <list-item><italic>Ook van een ongehuwd jonkman, een man „die nie wijf en kende”</italic></list-item>
+            <list-item><italic>Eene ongehuwde vrouw of meisje in dienstbaarheid, dienstmaagd</italic></list-item>
+          </list>
+        </td>
+      </tr>
+      <tr>
+        <td><italic>Wijf</italic></td>
+        <td>
+          <list list-type="order">
+            <list-item><italic>Vrouw, vrouwspersoon, vrouw in het algemeen</italic>; ook <italic>jonge vrouw, meisje</italic></list-item>
+            <list-item><italic>Zedelooze vrouw</italic>; <italic>lichtekooi</italic></list-item>
+            <list-item><italic>Gehuwde vrouw</italic></list-item>
+            <list-item><italic>Van Maria, de Moeder Gods</italic></list-item>
+            <list-item><italic>Echtgenoote, vrouw</italic></list-item>
+            <list-item><italic>Het wijfje van een dier</italic></list-item>
+            <list-item><italic>Dienstmaagd, dienstbode</italic></list-item>
+          </list>
+        </td>
+      </tr>
+      <tr>
+        <td><italic>Vrouwe</italic></td>
+        <td>
+          <list list-type="order">
+            <list-item><italic>Gebiedster, heerscheres, landsvrouwe</italic></list-item>
+            <list-item><italic>Van Maria, de hemelkoningin</italic>, ndl. „onze lieve <italic>Vrouw</italic>”</list-item>
+            <list-item><italic>Meesteres</italic></list-item>
+            <list-item>Als uitdrukking voor <italic>de hoogste, voornaamste, uitstekendste, beste in een soort</italic></list-item>
+            <list-item>Gebruik als <italic>deftige dame, vrouw van hooge geboorte of van aanzienlijken stand</italic></list-item>
+            <list-item><italic>Vrouw</italic> in het algemeen, hetzelfde als wijf</list-item>
+            <list-item><italic>Echtgenoot, vrouw van, huisvrouw</italic></list-item>
+            <list-item>In samenstellingen met de betekenis <italic>opzichteres</italic></list-item>
+          </list>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Bron: Historische Nederlandse teksten</td>
+      </tr>
+    </tfoot>
+  </table>
+</table-wrap>
+```
+
+
 
 ## see also
 Search Confluence [here](https://confluence.ingenta.com/confluence/dosearchsite.action?cql=siteSearch+~+%22accessibility%22&queryString=accessibility).
