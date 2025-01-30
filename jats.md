@@ -39,7 +39,7 @@ The XML must use UTF-8 as the character encoding to ensure that characters are t
 
 ## Article wrapper tag
 
-The wrapper tag for the XML must be 
+The wrapper tag for the XML must be `<article>`.
 
 ### Article type attribute
 
@@ -87,9 +87,27 @@ Provide at least the following issue metadata whenever applicable. Metadata is r
 
 ### Required Article metadata
 
+element | attribute | notes
+----- | ----- | -----
+article-title | | Please refer to the section about article titles
+article-id | | 
+fpage and lpage OR elocation-id | | 
+
 ### Optional Article metadata
 
-Online First Article Metadata
+element | attribute | notes
+----- | ----- | -----
+subtitle | | 
+contrib-group | | Please refer to the section about Contributor information
+author-notes | | Content provided within author-notes is displayed in the expandable Affiliations section on the article page. 
+self-uri | | Please refer to the guidelines for linking a PDF to an article
+kwd-group | | Please refer to the guidelines for article keywords.
+permissions | | Please refer to the section about Licensing information
+history | | Please refer to the section about Article Publication History
+abstract | | Please refer to the section about Abstracts
+
+
+#### Online First Article Metadata
 
 Online first articles have data similar to articles described above but with the following exceptions:
 
@@ -419,3 +437,21 @@ JATS 1.1 has deprecated this element. So Edify strongly recommends the use of el
 ## Language codes
 
 Wherever language codes are required to be supplied in XML for the value of the **`@xml:lang`** attribute, they must be specified as as the two letter ISO code for the language. The code must be in lower case. For example **`<trans-abstract xml:lang="fr">...`**
+
+## Supplementary material
+Supplementary material must be tagged using the supplementary-material element within article/front/article-meta
+
+for example
+
+```xml
+<article-meta>
+....
+<supplementary-material id="S1" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xlink:title="local_file" xlink:href="audio_7a_splawn_pm_original_1534413313540.mp3" mimetype="audio/mpeg">
+    <caption><p>Audio 7b Splawn PM Profile</p></caption>
+</supplementary-material>
+<supplementary-material id="S2" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xlink:title="local_file" xlink:href="2016-10-video-01.mp4" mimetype="video/mp4">
+    <caption><p>Video 1</p>
+</caption>
+```
