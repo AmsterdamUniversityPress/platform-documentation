@@ -424,5 +424,6 @@ No special effort is required to make lists in JATS accessible, with the possibl
 - note that the item numbers are given explicitly instead of relying on a stylesheet. This falls flat for unordered lists, however
 
 ## see also
-- [JATS on accessibility](https://jats.nlm.nih.gov/publishing/tag-library/1.1/chapter/accessibility.html)
+- [JATS on accessibility](https://jats.nlm.nih.gov/publishing/tag-library/1.2/chapter/accessibility.html)
+- [De Gruyter's XML instructions](http://www.wiki.degruyter.de/production/files/dg_xml_guidelines.xhtml)
 - Search Confluence [here](https://confluence.ingenta.com/confluence/dosearchsite.action?cql=siteSearch+~+%22accessibility%22&queryString=accessibility).
