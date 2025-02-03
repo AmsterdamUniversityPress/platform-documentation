@@ -368,7 +368,60 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
 
 Note that this table does not need alt text because it is textual. For tables, it is good practice to rely on well-structured content (headers, captions, and a clear arrangement) and use `@alt` and `<alt-text>` for any graphical or complex content that requires additional explanation.
 
-Again: if the JATS is not accessible, the HTML cannot be accessible either. We need to fix the JATS and re-upload the content. THen, we need to check if the HTML is accessible.
+Again: if the JATS is not accessible, the HTML cannot be accessible either. We need to fix the JATS and re-upload the content. Then, we need to check if the HTML is accessible.
+
+## Example 3. Lists
+No special effort is required to make lists in JATS accessible, with the possible exception of adding a languages tag.
+
+### correct XML (in the light of EEA)
+
+```xml
+<list id="list1" list-type="unordered" xml:lang="nl">
+  <list-item>
+    <label>Maget</label>
+    <list list-type="ordered">
+      <list-item><p>1. <italic>Volwassen of huwbaar meisje, maagd, jonkvrouw, ongehuwde vrouw</italic></p></list-item>
+      <list-item><p>2. Ook van <italic>een ongehuwd jonkman, een man</italic> „die nie wijf en kende”</p></list-item>
+      <list-item><p>3. <italic>Eene ongehuwde vrouw of meisje in dienstbaarheid, dienstmaagd</italic></p></list-item>
+    </list>
+  </list-item>
+  
+  <list-item>
+    <label>Wijf</label>
+    <list list-type="ordered">
+      <list-item><p>1. <italic>Vrouw, vrouwspersoon, vrouw in het algemeen</italic>; ook <italic>jonge vrouw, meisje</italic>; vgl. joncwijf</p></list-item>
+      <list-item><p>2. In ongunstigen zin. <italic>Zedelooze vrouw</italic>; <italic>lichtekooi</italic></p></list-item>
+      <list-item><p>3. <italic>Gehuwde vrouw</italic></p></list-item>
+      <list-item><p>4. <italic>Van Maria, de Moeder Gods</italic></p></list-item>
+      <list-item><p>5. <italic>Echtgenoote, vrouw</italic></p></list-item>
+      <list-item><p>6. <italic>Het wijfje van een dier</italic></p></list-item>
+      <list-item><p>7. <italic>Dienstmaagd, dienstbode</italic></p></list-item>
+    </list>
+  </list-item>
+  
+  <list-item>
+    <label>Vrouwe</label>
+    <list list-type="ordered">
+      <list-item><p>1. <italic>Gebiedster, heerscheres, landsvrouwe</italic></p></list-item>
+      <list-item><p>2. Van <italic>Maria, de hemelkoningin</italic>, ndl. „onze lieve <italic>Vrouw</italic>”</p></list-item>
+      <list-item><p>3. <italic>Meesteres</italic></p></list-item>
+      <list-item><p>4. Van zaken en dingen gezegd heeft vrouwe de bet. van <italic>de hoogste, voornaamste, uitstekendste, beste in eene soort</italic></p></list-item>
+      <list-item><p>5. Vrouwe wordt de uitdrukking voor <italic>deftige dame, vrouw van hooge geboorte of van aanzienlijken stand</italic>, ook <italic>edelvrouw</italic></p></list-item>
+      <list-item><p>6. <italic>Vrouw</italic> in het algemeen, hetzelfde als wijf</p></list-item>
+      <list-item><p>7. <italic>Vrouw, echtgenoot, vrouw van, huisvrouw</italic></p></list-item>
+      <list-item><p>8. Als tweede lid van eene samenstelling komt vrouwe voor in woorden, waar het de bet. <italic>opzichteres</italic> heeft.</p></list-item>
+    </list>
+  </list-item>
+</list>
+```
+
+#### some points
+
+- note the explicit language declaration
+- it has a clear list structure with `<label>` for context
+- it has ordered nested lists for logical reading order
+- each term is visually and semantically distinct as a proper list item
+- note that the item numbers are given explicitly instead of relying on a stylesheet. This falls flat for unordered lists, however
 
 ## see also
 Search Confluence [here](https://confluence.ingenta.com/confluence/dosearchsite.action?cql=siteSearch+~+%22accessibility%22&queryString=accessibility).
