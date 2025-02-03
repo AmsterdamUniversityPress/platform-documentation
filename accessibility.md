@@ -206,6 +206,7 @@ Accessible tables require:
 Note the missing `@alt` attribute for `<graphic>`. Screen readers will not be able to describe the image. Also, `<label>` should not replace `<caption>`. Screen readers will not necessarily read the caption. Lastly, `@xml:lang` is missing for multilingual support.
 
 ### correct XML (in the light of EEA)
+
 ```xml
 <fig id="fig1" xml:lang="nl">
   <caption>
@@ -216,27 +217,29 @@ Note the missing `@alt` attribute for `<graphic>`. Screen readers will not be ab
 </fig>
 ```
 
-#### Summary of fixes
+#### How is this different?
 
-- ✅ Added `alt` text for better screen reader support. Use `@alt` or `<alt-text>` if a longer explanation is ndded
-- ✅ Moved the label into `<caption>` for proper structure.
-- ✅ Specified `xml:lang="nl"` for correct pronunciation.
-- ✅ Optional: `<long-desc>` for complex figures.
+- It has `alt` text for better screen reader support. Use `@alt` or `<alt-text>` if a longer explanation is ndded
+- The label is moved into `<caption>` for proper structure.
+- It pecifies `xml:lang="nl"` for correct pronunciation.
 
 Of course, these fixes mean nothing if the HTML generated from the XML is not accessible...
 
 #### `@alt` vs `<alt-text>`
-Use `@alt` for **simple** alternative text
+Use `@alt` for **simple** alternative text:
+
 - short, concise descriptions (one-liners)
 - place directly inside `<graphic>` or `<inline-graphic>`
 - only plain text (no formatting)
 
-Use `<alt-text>` for **longer** or structured alternative text
+Use `<alt-text>` for **longer** or structured alternative text:
+
 - a separate child element within `<fig>`, `<table-wrap>`, or `<media>`.
 - allows structure/mark-up (e.g. bold, italics, links)
 - use for for complex figures that need detailed descriptions
 
-Use **both**
+Use **both**:
+
 - when the JATS XML will be transformed into multiple output formats (e.g. HTML, PDF, EPUB)
 - screen readers will first read `@alt`
 - users needing more details can access `<alt-text>`
@@ -289,7 +292,7 @@ There are some issues with this XML:
 
 It may also make sense to explicitly associate `<td>` cells with column meaning. For simple tables, `<th scope="col">` is enough. For complex tables, use `<td headers="id_of_th">`.
 
-### correct XML
+### correct XML (in the light of EEA)
 ```xml
 <table-wrap id="tab1" xml:lang="nl">
   <title><italic>Maget, wijf</italic> en <italic>vrouwe</italic> in nominale aanspreekvormen: het corpus</title>
@@ -355,13 +358,13 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
 </table-wrap>
 ```
 
-#### Summary of fixes:
-- ✅ Added `<thead>` with `<th>` headers for better screen reader support.
-- ✅ Added `<title>` in `<table-wrap>` and `<caption>` inside `<table>` for clear descriptions.
-- ✅ Added `xml:lang="nl"`
-- ✅ Used `<scope>` attributes in `<th>` to clarify column relationships.
-- ✅ Grouped header and footer properly (`<thead>`, `<tbody>`, `<tfoot>`).
-- ✅ Replaced inline numbered lists with `<list>` elements for semantic clarity.
+#### How is this different?
+- It has `<thead>` with `<th>` headers for better screen reader support.
+- It has `<title>` in `<table-wrap>` and `<caption>` inside `<table>` for clear descriptions.
+- It has `xml:lang="nl"`
+- It uses `<scope>` attributes in `<th>` to clarify column relationships.
+- It groups header and footer properly (`<thead>`, `<tbody>`, `<tfoot>`).
+- It replaces inline numbered lists with `<list>` elements for semantic clarity.
 
 Note that this table does not need alt text because it is textual. For tables, it is good practice to rely on well-structured content (headers, captions, and a clear arrangement) and use `@alt` and `<alt-text>` for any graphical or complex content that requires additional explanation.
 
