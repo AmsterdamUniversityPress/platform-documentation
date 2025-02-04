@@ -426,4 +426,5 @@ No special effort is required to make lists in JATS accessible, with the possibl
 ## see also
 - [JATS on accessibility](https://jats.nlm.nih.gov/publishing/tag-library/1.2/chapter/accessibility.html)
 - [De Gruyter's XML instructions](http://www.wiki.degruyter.de/production/files/dg_xml_guidelines.xhtml)
+- [T & F page on accessibility](https://jats.taylorandfrancis.com/jats-guide/topics/accessibility/)
 - Search Confluence [here](https://confluence.ingenta.com/confluence/dosearchsite.action?cql=siteSearch+~+%22accessibility%22&queryString=accessibility).
