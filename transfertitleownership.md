@@ -5,7 +5,7 @@ This is about what to do when AUP acquires a new title, for example a journal. T
 1. AUP acquires _all_ of the disposing publisher's titles
 2. AUP acquires _one_ of the disposing publisher's titles
 
-This page is about scenario : how to let [CrossRef](crossref.md) know that the title now has a new owner, so that the DOI registration is handled succesfully and there are no [problems](doiregistrationproblems.md).
+This page is about scenario 2: how to let [CrossRef](crossref.md) know that the title now has a new owner, so that the DOI registration is handled succesfully and there are no [problems](doiregistrationproblems.md).
 
 ## how it works
 
