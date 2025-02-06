@@ -27,6 +27,7 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 - [BITS](https://amsterdamuniversitypress.github.io/platform-documentation/bits)
 - [JATS](https://amsterdamuniversitypress.github.io/platform-documentation/jats)
 - [ONIX](https://amsterdamuniversitypress.github.io/platform-documentation/onix)
+- [Validation](validation.md)
 
 ### other subjects
 - [Accessibility](https://amsterdamuniversitypress.github.io/platform-documentation/accessibility)
