@@ -212,16 +212,16 @@ Note the missing `@alt` attribute for `<graphic>`. Screen readers will not be ab
   <caption>
     <title>Diagram 1: Kwantitatief overzicht nominale kernen</title>
   </caption>
-  <graphic xlink:href="QUE2022.1.001.KLEI_fig1.jpg" alt="Diagram 1: Kwantitatief overzicht nominale kernen"/>
-  <alt-text>Dit diagram toont een kwantitatieve analyse van nominale kernen, met een vergelijking van frequenties en patronen.</alt-text>
+  <alt-text>Diagram 1: Kwantitatief overzicht nominale kernen</alt-text>
+  <graphic xlink:href="QUE2022.1.006.TEST_fig1.jpg"/>
 </fig>
 ```
 
 #### How is this different?
 
-- It has `alt` text for better screen reader support. Use `@alt` or `<alt-text>` if a longer explanation is ndded
+- It has `alt` text for better screen reader support. Use `@alt` or `<alt-text>` if a longer explanation is neeeded
 - The label is moved into `<caption>` for proper structure.
-- It pecifies `xml:lang="nl"` for correct pronunciation.
+- It specifies `xml:lang="nl"` for correct pronunciation.
 
 Of course, these fixes mean nothing if the HTML generated from the XML is not accessible...
 
@@ -295,10 +295,12 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
 ### correct XML (in the light of EEA)
 ```xml
 <table-wrap id="tab1" xml:lang="nl">
-  <title><italic>Maget, wijf</italic> en <italic>vrouwe</italic> in nominale aanspreekvormen: het corpus</title>
+  <caption>
+    <title><italic>Maget, wijf</italic> en <italic>vrouwe</italic> in nominale aanspreekvormen: het corpus</title>
+    <p>Het MNW geeft de volgende betekenissen voor de zelfstandige naamwoorden <italic>maget, wijf</italic> en <italic>vrouwe</italic></p>
+  </caption>
   <table id="table1" width="1*">
-    <caption>Het <sc>mnw</sc> geeft de volgende betekenissen voor de zelfstandige naamwoorden <italic>maget, wijf</italic> en <italic>vrouwe</italic></caption>
-    <colgroup>
+     <colgroup>
       <col width="0.20*"/>
       <col width="0.80*"/>
     </colgroup>
@@ -308,14 +310,19 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
         <th scope="col">Definitions</th>
       </tr>
     </thead>
+    <tfoot>
+      <tr>
+        <td colspan="2">Bron: <sc>mnw</sc></td>
+      </tr>
+    </tfoot>
     <tbody>
       <tr>
         <td><italic>Maget</italic></td>
         <td>
           <list list-type="order">
-            <list-item><italic>Volwassen of huwbaar meisje, maagd, jonkvrouw, ongehuwde vrouw</italic></list-item>
-            <list-item><italic>Ook van een ongehuwd jonkman, een man „die nie wijf en kende”</italic></list-item>
-            <list-item><italic>Eene ongehuwde vrouw of meisje in dienstbaarheid, dienstmaagd</italic></list-item>
+            <list-item><p><italic>Volwassen of huwbaar meisje, maagd, jonkvrouw, ongehuwde vrouw</italic></p></list-item>
+            <list-item><p><italic>Ook van een ongehuwd jonkman, een man „die nie wijf en kende”</italic></p></list-item>
+            <list-item><p><italic>Eene ongehuwde vrouw of meisje in dienstbaarheid, dienstmaagd</italic></p></list-item>
           </list>
         </td>
       </tr>
@@ -323,13 +330,13 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
         <td><italic>Wijf</italic></td>
         <td>
           <list list-type="order">
-            <list-item><italic>Vrouw, vrouwspersoon, vrouw in het algemeen</italic>; ook <italic>jonge vrouw, meisje</italic></list-item>
-            <list-item><italic>Zedelooze vrouw</italic>; <italic>lichtekooi</italic></list-item>
-            <list-item><italic>Gehuwde vrouw</italic></list-item>
-            <list-item><italic>Van Maria, de Moeder Gods</italic></list-item>
-            <list-item><italic>Echtgenoote, vrouw</italic></list-item>
-            <list-item><italic>Het wijfje van een dier</italic></list-item>
-            <list-item><italic>Dienstmaagd, dienstbode</italic></list-item>
+            <list-item><p><italic>Vrouw, vrouwspersoon, vrouw in het algemeen</italic>; ook <italic>jonge vrouw, meisje</italic></p></list-item>
+            <list-item><p><italic>Zedelooze vrouw</italic>; <italic>lichtekooi</italic></p></list-item>
+            <list-item><p><italic>Gehuwde vrouw</italic></p></list-item>
+            <list-item><p><italic>Van Maria, de Moeder Gods</italic></p></list-item>
+            <list-item><p><italic>Echtgenoote, vrouw</italic></p></list-item>
+            <list-item><p><italic>Het wijfje van een dier</italic></p></list-item>
+            <list-item><p><italic>Dienstmaagd, dienstbode</italic></p></list-item>
           </list>
         </td>
       </tr>
@@ -337,24 +344,19 @@ It may also make sense to explicitly associate `<td>` cells with column meaning.
         <td><italic>Vrouwe</italic></td>
         <td>
           <list list-type="order">
-            <list-item><italic>Gebiedster, heerscheres, landsvrouwe</italic></list-item>
-            <list-item>Van <italic>Maria, de hemelkoningin</italic>, ndl. &#x201E;onze lieve <italic>Vrouw</italic>&#x201D;</list-item>
-            <list-item><italic>Meesteres</italic></list-item>
-            <list-item>Van zaken en dingen gezegd heeft vrouwe de bet. van <italic>de hoogste, voornaamste, uitstekendste, beste in eene soort</italic></list-item>
-            <list-item>Vrouwe wordt de uitdrukking voor <italic>deftige dame, vrouw van hooge geboorte of van aanzienlijken stand</italic>, ook <italic>edelvrouw</italic></list-item>
-            <list-item><italic>Vrouw</italic> in het algemeen, hetzelfde als wijf</list-item>
-            <list-item><italic>Vrouw, echtgenoot, vrouw van, huisvrouw</italic></list-item>
-            <list-item>Als tweede lid van eene samenstelling komt vrouwe voor in woorden, waar het de bet. <italic>opzichteres</italic> heeft</list-item>
+            <list-item><p><italic>Gebiedster, heerscheres, landsvrouwe</italic></p></list-item>
+            <list-item><p>Van <italic>Maria, de hemelkoningin</italic>, ndl. &#x201E;onze lieve <italic>Vrouw</italic>&#x201D;</p></list-item>
+            <list-item><p><italic>Meesteres</italic></p></list-item>
+            <list-item><p>Van zaken en dingen gezegd heeft vrouwe de bet. van <italic>de hoogste, voornaamste, uitstekendste, beste in eene soort</italic></p></list-item>
+            <list-item><p>Vrouwe wordt de uitdrukking voor <italic>deftige dame, vrouw van hooge geboorte of van aanzienlijken stand</italic>, ook <italic>edelvrouw</italic></p></list-item>
+            <list-item><p><italic>Vrouw</italic> in het algemeen, hetzelfde als wijf</p></list-item>
+            <list-item><p><italic>Vrouw, echtgenoot, vrouw van, huisvrouw</italic></p></list-item>
+            <list-item><p>Als tweede lid van eene samenstelling komt vrouwe voor in woorden, waar het de bet. <italic>opzichteres</italic> heeft</p></list-item>
           </list>
         </td>
       </tr>
     </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="2">Bron: <sc>mnw</sc></td>
-      </tr>
-    </tfoot>
-  </table>
+    </table>
 </table-wrap>
 ```
 
