@@ -85,4 +85,8 @@ For example,
 xmllint --noout --dtdvalid ../JATS-Publishing-1-2-MathML3-DTD/JATS-journalpublishing1-mathml.dtd QUE2022.1.001.KLEI.xml
 ```
 
-This should now validate your document. if there are any errors, you should see error messages in the terminal. Happy debugging 🐞🐞🐞 
+This should now validate your document. if there are any errors, you should see error messages in the terminal. 
+
+Obviously, there is _much_ more you can do with `xmllint`, not in the least automating workflows. But for now at least we have a simple means of checking if our XML document is ok.
+
+Happy debugging 🐞🐞🐞 
