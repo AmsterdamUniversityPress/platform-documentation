@@ -17,18 +17,14 @@ This page is about scenario 2: how to let [CrossRef](crossref.md) know that the 
 
 1. Disposing and acquiring publisher confirm that all existing DOIs have definitely been registered with Crossref and agree financial arrangement for registration of DOIs.
 2. Disposing or acquiring publisher contacts the [Crossref support team](https://www.crossref.org/contact/) to request a title transfer
-3. Crossref updates the title record in our system and confirm when this is complete.
+3. Crossref updates the title record in the system and confirm when this is complete.
 4. The acquiring publisher updates the metadata on existing DOIs as required.
 
 ## contacting CrossRef
 There are two ways to request a title transfer
 
 1. Post a title transfer to the [Enhanced Transfer Alerting Service (ETAS)](https://journaltransfer.issn.org/). This is Crossref's preferred option but it [seems](https://journaltransfer.issn.org/api?query=rpcn:aup) AUP doesn't do this.
-2. [send Crossref confirmation](mailto:member@crossref.org) that the disposing publisher is aware of and agrees with the ownership transfer. The confirmation may be a forwarded email from the disposing publisher to the acquiring publisher acknowledging the transfer. The forwarded email must contain the original sender details.An announcement on the website of the disposing publisher works too.
-
-Please be specific about what is being transferred - include ISSNs, ISBNs, and when you need the transfer to occur (if applicable). Do be specific about which prefix the title is being transferred to, as some publishers have more than one prefix. Let us know if this is a transfer of the entire title and all associated DOIs, or just a transfer for future content.
-
-(NB: We used to allow disposing publishers to transfer titles themselves through the Metadata Manager tool, but this service has been deprecated).
+2. [Send Crossref confirmation](mailto:member@crossref.org) that the disposing publisher is aware of and agrees with the ownership transfer. The confirmation may be a forwarded email from the disposing publisher to the acquiring publisher acknowledging the transfer. The forwarded email must contain the original sender details. An announcement on the website of the disposing publisher works too.
 
 ## a journal can have multiple prefixes
 If a single title is transferred, that title will have DOIs with at least two _different_ DOI prefixes: the one of the disposing publisher for all content published during that publisher's ownership, and the prefix of the acquiring publisher, for all content published after the moment of acquisition.
