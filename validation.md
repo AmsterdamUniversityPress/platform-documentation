@@ -72,7 +72,8 @@ Replace them with these lines:
 
 ```
 
-Save and close.
+Save and close. Now the next steps.
+
 3. make sure to have `xmllint` installed. It comes pre-installed on MacOS. See [the official site](https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home) for how to get it.
 4. Open a terminal (command line) in the folder where your XML document is situated and type the following
 
