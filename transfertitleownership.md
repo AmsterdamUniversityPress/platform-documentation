@@ -1,48 +1,58 @@
 # Transfer Title Ownership with CrossRef
 
-This is about what to do when AUP acquires a new title, for example a journal. This process has many steps and this page looks at only one of them: how to let [CrossRef](crossref.md) know that the title now has a new owner, so that the DOI registration is handled succesfully and there are no [problems](doiregistrationproblems.md).
+This is about what to do when AUP acquires a new title, for example a journal. There are two scenarios
 
-So, I sent them an email and they said the following:
+1. AUP acquires _all_ of the disposing publisher's titles
+2. AUP acquires _one_ of the disposing publisher's titles
 
-## official CrossRef response
-We enforce a concept of ownership for the titles that are registered with Crossref. When the first DOI for a title is registered with us by a member, this creates a title record in our system. This title record ties the title to the prefix belonging to that member. The member who owns that prefix is then the only member allowed to create new DOIs for content belonging to that title (or update the metadata on existing DOIs for that title).
- 
-If that title is then acquired by a member with a different prefix, we have the option to transfer ownership of that title in the Crossref system to the other member's prefix, but **we need a title transfer notification** to confirm that the disposing publisher approves the move.]
- 
-The title you mentioned is currently owned by (`<insert disposing publisher name>`) in the Crossref system. We need title transfer notification to confirm that they are happy with the transfer. There are several different ways to do this.
- 
-### Option 1 - preferred option
-If a title transfer has been posted to the [Enhanced Transfer Alerting Service](https://journaltransfer.issn.org/) (ETAS), let us know and we’ll proceed with the transfer without further confirmation.
- 
-### Option 2
-If you don't participate in Transfer (ETAS), please send member@crossref.org confirmation that the disposing publisher is aware of and agrees with the ownership transfer. The confirmation may be a forwarded email from the disposing publisher to the acquiring publisher acknowledging the transfer. The forwarded email must contain the original sender details.
- 
-### Option 3
-Alternatively, if there is a notice on the disposing publisher's website confirming the move, that works too. 
- 
-Whichever option you use, please be specific about what is being transferred - include ISSNs, ISBNs, and when you need the transfer to occur (if applicable). Do be specific about which prefix the title is being transferred to, as some publishers have more than one prefix.
- 
-###  Important issue to discuss with the disposing publisher
-Before the transfer, it's important to check that all displayed DOIs using the disposing publisher's prefix have definitely been successfully registered with us. 
- 
-If, for example, the disposing publisher has DOIs on their own prefix displayed on their website for their latest issue, but they haven't yet registered these DOIs with Crossref, that would cause a problem. As soon as we transfer ownership of the title to the acquiring publisher, the disposing publisher will no longer be able to register any new DOIs on the disposing publisher prefix. And obviously, as those DOIs have already been displayed on a website, it's vital that they have been registered and actually work!
- 
-So in advance of sending us the title transfer request, make sure to get confirmation from the disposing publisher that they have definitely successfully registered all DOIs for this title that have already been displayed on their site.
- 
-### Use of existing DOIs
-After the transfer is complete, it's vital that your organisation doesn't register new DOIs for content that already has a DOI registered by the original publisher. Once a DOI has been registered for an item, that DOI needs to remain the persistent identifier for that item - forever. Registering new DOIs for content that already has DOIs contravenes clause 2 h 3 of the Crossref membership [terms](https://www.crossref.org/membership/terms/). Your organisation should continue to display and use the existing DOIs, despite the fact that they aren't on your prefix. Don't worry - if we do a full title transfer, you'll then be able to update the metadata on these DOIs, even though they aren't on your prefix. It's our expectation that your platform will be able to accommodate this. 
- 
-You can learn more about our title transfer process [here](https://www.crossref.org/documentation/register-maintain-records/creating-and-managing-dois/transferring-responsibility-for-dois/). If you have any questions, please don't hesitate to ask.
+This page is about scenario : how to let [CrossRef](crossref.md) know that the title now has a new owner, so that the DOI registration is handled succesfully and there are no [problems](doiregistrationproblems.md).
+
+## how it works
+
+- Crossref updates the title record to associate the title with the acquiring publisher’s prefix going forward
+- content published _before_ the cut-off date keeps the _existing_ prefix and hence DOI
+- content published _after_ the cut-off data gets the acquiring member’s prefix and hence DOI
+
+## what we should do
+
+1. Disposing and acquiring publisher confirm that all existing DOIs have definitely been registered with Crossref and agree financial arrangement for registration of DOIs.
+2. Disposing or acquiring publisher contacts the [Crossref support team](https://www.crossref.org/contact/) to request a title transfer
+3. Crossref updates the title record in our system and confirm when this is complete.
+4. The acquiring publisher updates the metadata on existing DOIs as required.
+
+## contacting CrossRef
+There are two ways to request a title transfer
+
+1. Post a title transfer to the [Enhanced Transfer Alerting Service (ETAS)](https://journaltransfer.issn.org/). This is Crossref's preferred option but it [seems](https://journaltransfer.issn.org/api?query=rpcn:aup) AUP doesn't do this.
+2. [send Crossref confirmation](mailto:member@crossref.org) that the disposing publisher is aware of and agrees with the ownership transfer. The confirmation may be a forwarded email from the disposing publisher to the acquiring publisher acknowledging the transfer. The forwarded email must contain the original sender details.An announcement on the website of the disposing publisher works too.
+
+Please be specific about what is being transferred - include ISSNs, ISBNs, and when you need the transfer to occur (if applicable). Do be specific about which prefix the title is being transferred to, as some publishers have more than one prefix. Let us know if this is a transfer of the entire title and all associated DOIs, or just a transfer for future content.
+
+(NB: We used to allow disposing publishers to transfer titles themselves through the Metadata Manager tool, but this service has been deprecated).
+
+## a journal can have multiple prefixes
+If a single title is transferred, that title will have DOIs with at least two _different_ DOI prefixes: the one of the disposing publisher for all content published during that publisher's ownership, and the prefix of the acquiring publisher, for all content published after the moment of acquisition.
+
+- Crossref holds "title records" in their sysem. The title record ties the title to the prefix belonging to the publisher (= a "member" of CrossRef).
+- When the first DOI for a title is registered with CrossRef, this creates a title record in the Crossref system
+- The publisher who owns the prefix is the only one allowed to create new DOIs for content belonging to that title (or update metadata on existing DOIs)
+- if a title is acquired by another publisher with a different prefix, the DOIs of content published _before_ the acquisition _stay the same_
+- DOIs of content published _after_ the acquisition _get the acquiring publisher's prefix_ and hence DOI
+-the whole point of title ownership transfer is that the acquiring publisher gets to create new DOIs for that title (and gets to update metadata if necessary)
+
+## some practical points
+- check that all DOIs of content published before the acquisition is successfully registered with Crossref
+- be as specific as possible when requesting a title transfer with Crossref (title, ISSNs, DOIs, etc.)
+- using the disposing publisher's prefix have definitely been  us. 
+- do _not_ register new DOIs (and/or DOIs with the new prefix) for content published before the acquisition. use the existing DOIs.
+
 
 ## quick summary
 1. post a title transfer to ETA
-2. send a title transfer notification to CrossRef
+2. alternatively, send a title transfer notification to CrossRef
 3. make sure all DOIs (of the title) of the disposing publisher are registrered with CrossRef
 
-The above only applies if one title is transferred. If _all_ titles are aquired, the disposing publisher's prefix is transferred over to the acquiring publisher.
-
-## note
-If a single title is transferred, that title will have DOIs with at least two _different_ DOI prefixes: the one of the disposing publisher for all content published during that publisher's ownership, and the prefix of the acquiring publisher, for all content published after the moment of acquisition.
+Rembemr, the above only applies if one title is transferred. If _all_ titles are aquired, the disposing publisher's prefix is transferred over to the acquiring publisher.
 
 ## see also
 
