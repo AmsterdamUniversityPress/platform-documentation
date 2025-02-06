@@ -48,7 +48,7 @@ If a single title is transferred, that title will have DOIs with at least two _d
 2. alternatively, send a title transfer notification to CrossRef
 3. make sure all DOIs (of the title) of the disposing publisher are registrered with CrossRef
 
-Rembemr, the above only applies if one title is transferred. If _all_ titles are aquired, the disposing publisher's prefix is transferred over to the acquiring publisher.
+Remember, the above only applies if one title is transferred. If _all_ titles are aquired, the disposing publisher's prefix is transferred over to the acquiring publisher.
 
 ## see also
 
