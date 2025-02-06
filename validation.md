@@ -11,7 +11,7 @@ All checkers that can check validty can also check well-formedness. The opposite
 
 The best answer is: buy a decent XML editor like Oxygen. This has a well-formedness and validity button. Press it and do whatever the messages that pop up tell you. 
 
-You may be able to do the same with other XML editors. (There are many). However, I was unable to do so with VS Code, even after installing the official XML plug-in. Or rather, VS Code validates against the schema, but it puts certain requirement on it, and when the schema doesn't meet these, VS Code reports errors and does not properly validate.
+You may be able to do the same with other XML editors. (There are many). However, I was unable to do so with VS Code, even after installing the official XML plug-in. Or rather, VS Code validates against the schema, but it puts certain requirements on it, and when the schema doesn't meet these, VS Code reports errors and does not properly validate.
 
 So here is a different approach.
 
