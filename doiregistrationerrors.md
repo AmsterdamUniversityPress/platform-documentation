@@ -88,6 +88,7 @@ It should be emphasised once more that CrossRef does not check the JATS. This is
 ## tips and tricks
 
 - DOIs may **only** contain ASCII characters. This is **not** valid: `<article-idpub-id-type="doi">10.517/SH2023.1.014.SCH&#x00D6;</article-id>`. This is valid: `<article-idpub-id-type="doi">10.517/SH2023.1.014.SCHO</article-id>`
+- the title has to be **absolutely consistent**. The title is not sometimes `<journal-title>TRAJECTA. RELIGION, CULTURE AND SOCIETY IN THE LOW COUNTRIES</journal-title>`, sometimes `<journal-title>Trajecta. Religion, Culture and Society in the Low Countries</journal-title>` and sometimes `<journal-title> Trajecta </journal-title>`. It is ever only `<journal-title>Trajecta</journal-title>`
 
 
 ## see also
