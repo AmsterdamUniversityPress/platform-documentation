@@ -11,7 +11,7 @@ This page is about scenario 2: how to let [CrossRef](crossref.md) know that the 
 
 - Crossref updates the title record to associate the title with the acquiring publisher’s prefix going forward
 - content published _before_ the cut-off date keeps the _existing_ prefix and hence DOI
-- content published _after_ the cut-off data gets the acquiring member’s prefix and hence DOI
+- content published _after_ the cut-off date gets the acquiring publisher’s prefix and hence DOI
 
 ## what we should do
 
@@ -40,7 +40,7 @@ If a single title is transferred, that title will have DOIs with at least two _d
 - check that all DOIs of content published before the acquisition is successfully registered with Crossref
 - be as specific as possible when requesting a title transfer with Crossref (title, ISSNs, DOIs, etc.)
 - using the disposing publisher's prefix have definitely been  us. 
-- do _not_ register new DOIs (and/or DOIs with the new prefix) for content published before the acquisition. use the existing DOIs.
+- do _not_ register new DOIs (and/or DOIs with the new prefix) for content published before the acquisition. Use the existing DOIs.
 
 
 ## quick summary
@@ -56,6 +56,7 @@ Remember, the above only applies if one title is transferred. If _all_ titles ar
 - [Before, during, and after - a journey through title transfers](https://www.crossref.org/blog/before-during-and-after-a-journey-through-title-transfers/)
 - [Transfer Alerting Service](https://journaltransfer.issn.org/)
 - [The NISO Transfer Code of Practice](https://www.niso.org/standards-committees/transfer)
+- [NISO RP-24-2019 Transfer Code of Practice (Version 4.0)](https://www.niso.org/publications/rp-24-2019-transfer)
 
 
 
