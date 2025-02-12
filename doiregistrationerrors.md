@@ -93,3 +93,4 @@ It should be emphasised once more that CrossRef does not check the JATS. This is
 
 ## see also
 - [DOI Registration](https://amsterdamuniversitypress.github.io/platform-documentation/doiregistration)
+- [Constructing your DOIs](https://www.crossref.org/documentation/member-setup/constructing-your-dois/)
