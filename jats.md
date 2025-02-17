@@ -29,9 +29,9 @@ The XML must be well-formed and conform to the JATS 1.1 DTD. UTF-8 encoding must
 
 Declarations required at the top of each XML file are:
 
--   XML version
--   Character encoding
--   Document Type Definition
+- XML version
+- Character encoding
+- Document Type Definition
 
 **Example**:
 
@@ -111,16 +111,16 @@ abstract | | Please refer to the section about Abstracts
 
 Online first articles have data similar to articles described above but with the following exceptions:
 
-1.  The XML for an online first article must not contain any issue data - e.g. volume and issue metadata.
-2.  The XML for an online first article must not contain any page number information.
+1. The XML for an online first article must not contain any issue data - e.g. volume and issue metadata.
+2. The XML for an online first article must not contain any page number information.
 
 ## Specifying the language of an article
 
 Edify uses the following logic to work out the language of an article. This value of language is used for displaying the language name in the site, filtering by that language in search results etc.
 
--   Where **`/article/front/article-meta/title-group/article-title`** has an **`@xml:lang`** attribute, the value of the attribute is used as the language of the article
--   Where the **`article`** element has an **`@xml:lang`** attribute, the value of that attribute is used as the language of the article.
--   Where both the above are not provided, the language is defaulted to "en" (English).
+- Where **`/article/front/article-meta/title-group/article-title`** has an **`@xml:lang`** attribute, the value of the attribute is used as the language of the article
+- Where the **`article`** element has an **`@xml:lang`** attribute, the value of that attribute is used as the language of the article.
+- Where both the above are not provided, the language is defaulted to "en" (English).
 
 In all cases, the value of the **`@xml:lang`** attribute must follow the [guidelines for language codes](https://confluence.ingenta.com/confluence/display/AUP/JATS+XML+Guidelines#JATSXMLGuidelines-language-codes). 
 
@@ -142,7 +142,7 @@ The Edify loading system constructs the display date by concatenating the value 
 
 For example
 
-```
+```xml
 <pub-date publication-format="electronic">
     <day>1</day>
     <month>4</month>
@@ -163,7 +163,7 @@ The following elements are supported within the `<contrib>` element.
 
 Example contributor markup is as follows
 
-```
+```xml
 <contrib-group>
     <contrib contrib-type="author">
         <name>
@@ -182,25 +182,29 @@ Example contributor markup is as follows
 
 Affiliations can be tagged in one of the following ways
 
--   Place the <aff> tags within the contrib-group/contrib element for example
+-   Place the `<aff>` tags within the contrib-group/contrib element for example
 
-`<contrib-group>`
-    `<contrib-type="author">`
-        `<name><surname>Smith</surname><given-names>John</given-names></name>`
-        `<aff>Magdalen College, Oxford</aff>`
-    `</contrib>`
-    `....`
-`</contrib-group>` 
+```xml
+<contrib-group>
+    <contrib-type="author">
+        <name><surname>Smith</surname><given-names>John</given-names></name>`
+        <aff>Magdalen College, Oxford</aff>
+    </contrib>
+    ....
+</contrib-group>
+```
 
 -   Place the aff elements within the contrib-group element and use the xref element within a contrib element to reference the affiliation. For example
 
-`<contrib-group>`
-    `<contrib-type="author">`
-        `<name><surname>Smith</surname><given-names>John</given-names></name>`
-        `<xref ref-type="aff" rid="aff1"/>`
-    `</contrib>`
-    `<aff id="aff1">Magdalen College, Oxford</aff>`
-`</contrib-group>` 
+```xml
+<contrib-group>
+    <contrib-type="author">`
+        <name><surname>Smith</surname><given-names>John</given-names></name>
+        <xref ref-type="aff" rid="aff1"/>
+    </contrib>
+    <aff id="aff1">Magdalen College, Oxford</aff>
+</contrib-group>
+```
 
 At present, the **`aff-alternatives`** element is not supported in Edify. 
 
@@ -214,15 +218,17 @@ To specify that the contributor is authenticated and qualiﬁes for Crossref's a
 
 For example
 
-`<contrib-group>`
-    `<contrib>`
-        `<contrib-id contrib-id-type="orcid"` `authenticated="true">http://orcid.org/0000-0002-1234-1234</contrib-id>`
-        `<name>`
-            `<surname>Smith</surname>`
-            `<given-names>John</given-names>`
-        `</name>`
-    `</contrib>`
-`</contrib-group>`
+```xml
+<contrib-group>
+    <contrib>
+        <contrib-id contrib-id-type="orcid" authenticated="true">http://orcid.org/0000-0002-1234-1234</contrib-id>
+        <name>
+            <surname>Smith</surname>
+            <given-names>John</given-names>
+        </name>
+    </contrib>
+</contrib-group>
+```
 
 ## Subjects
 Articles can have subjects. They aren't really subjects. They are article **types**. Anyway, in the XML, only **one** subject is allowed. For example
@@ -237,7 +243,7 @@ Articles can have subjects. They aren't really subjects. They are article **type
 
 You can define keywords for an article within the XML using the **`kwd`** element. Each keyword must be specified in a separate **`kwd`** element. The **`kwd`** elements are enclosed within a **`kwd-group`** element. For example
 
-```
+```xml
 <article>
     <front>
         ...
@@ -297,9 +303,9 @@ Please note that the above is based on the assumption that article URLs on the s
 
 For example
 
-   `related-article-type="corrected-article"`
-   `ext-link-type="doi"`
-   `xlink:href="10.1234/doi-of-original-article"/>`
+- `related-article-type="corrected-article"`
+- `ext-link-type="doi"`
+- `xlink:href="10.1234/doi-of-original-article"/>`
 
 At present, the **`related-object`** element is not supported in Edify.
 
@@ -313,7 +319,7 @@ The value of the **`@xml:lang`** attribute must be a two letter language code i
 
 The **`article-title`** element along with the corresponding value of **`@xml:lang`** attribute must be used for the original article title. Please use **`trans-title-group/trans-title`** elements with a corresponding **`@xml:lang`** attribute for the **`trans-title-group`** element to provide article titles in other languages. For example
 
-```
+```xml
 <title-group>
     <article-title xml:lang="en">This is an example article title.</article-title>
     <trans-title-group xml:lang="fr"><trans-title>Ceci est un exemple de titre d'article</trans-title></trans-title-group>
@@ -336,17 +342,17 @@ The abstract element must be used for the original abstract. Please use trans-ab
 
 For example
 
-`<abstract xml:lang="en">This is an example abstract.</abstract>`
-`<trans-abstract xml:lang="fr">Ceci est un exemple abstrait.</trans-abstract>`
+- `<abstract xml:lang="en">This is an example abstract.</abstract>`
+- `<trans-abstract xml:lang="fr">Ceci est un exemple abstrait.</trans-abstract>`
 
 ## Linking the PDF to the article
 
--   Please use the `**article/front/article-meta/self-uri**` element to link the article to the corresponding PDF.
--   The **`self-uri`** tag must be supplied with an `**xlink:href**` attribute where the value of the attribute exactly matches the name of the PDF file supplied, along with the file name extension.
--   The **`self-uri`** element must be provided with an attribute **`@content-type`** and the value of the attribute must be specified as pdf e.g. **`<self-uri content-type="pdf" xlink:href="ajsr.2020.3.pdf" xmlns:xlink="http://www.w3.org/1999/xlink"/>`**
--   Please note that only one PDF can be supplied per article. 
--   Please do not prepend the file name with a directory path. 
--   If the Edify content loader does not find a PDF file with the name matching the value of the **`@xlink:href`** attribute of the **`self-uri`** element, the zip file will be rejected with an error message, 
+- Please use the `**article/front/article-meta/self-uri**` element to link the article to the corresponding PDF.
+- The **`self-uri`** tag must be supplied with an `**xlink:href**` attribute where the value of the attribute exactly matches the name of the PDF file supplied, along with the file name extension.
+- The **`self-uri`** element must be provided with an attribute **`@content-type`** and the value of the attribute must be specified as pdf e.g. **`<self-uri content-type="pdf" xlink:href="ajsr.2020.3.pdf" xmlns:xlink="http://www.w3.org/1999/xlink"/>`**
+- Please note that only one PDF can be supplied per article. 
+- Please do not prepend the file name with a directory path. 
+- If the Edify content loader does not find a PDF file with the name matching the value of the **`@xlink:href`** attribute of the **`self-uri`** element, the zip file will be rejected with an error message, 
 
 ## Displaying equations
 
@@ -366,14 +372,14 @@ The **`ac>`, `app-group`, `bio`, `fn-group`, `ref-list`, `notes`**, and *
 
 ## References
 
--   References or bibliographic citations must be tagged inside a **`ref-list`** element in the back matter.
--   Each reference must be in a separate **`ref`** element. 
--   Each **`ref`** element must be provided with an id attribute which is unique and internally consistent. Best practice is an alphanumeric sequence common to all citations in your document, followed by an incremental number matching the sequential order of citations.
+- References or bibliographic citations must be tagged inside a **`ref-list`** element in the back matter.
+- Each reference must be in a separate **`ref`** element. 
+- Each **`ref`** element must be provided with an id attribute which is unique and internally consistent. Best practice is an alphanumeric sequence common to all citations in your document, followed by an incremental number matching the sequential order of citations.
 -   References should be tagged at a granular level in order to support optimum display and matching. Without detailed tagging, Edify will be unable to match the reference against resources such as Crossref and would be unable to generate optimum links to citations in Google Scholar.
--   To include a publication's DOI, please use the **`pub-id`** element with an attribute **`@pub-id-type="doi"`** for example <**`pub-id pub-id-type="doi">10.1234/123456789</pub-id>`**.
--   To include a publication's PubMed ID, please use the **`pub-id`** element with an attribute **`@pub-id-type="pmid"`** for example <**`pub-id pub-id-type="pmid">12344</pub-id>`**.
--   Where the publication's DOI or PubMed ID have been specified, they will be used to automatically construct Crossref and PubMed links for the citation.
--   Edify supports the provision of a single **`ref-list`** element within the **`back`** element. Therefore provision of multiple **`ref-list`** elements must be avoided.   
+- To include a publication's DOI, please use the **`pub-id`** element with an attribute **`@pub-id-type="doi"`** for example <**`pub-id pub-id-type="doi">10.1234/123456789</pub-id>`**.
+- To include a publication's PubMed ID, please use the **`pub-id`** element with an attribute **`@pub-id-type="pmid"`** for example <**`pub-id pub-id-type="pmid">12344</pub-id>`**.
+- Where the publication's DOI or PubMed ID have been specified, they will be used to automatically construct Crossref and PubMed links for the citation.
+- Edify supports the provision of a single **`ref-list`** element within the **`back`** element. Therefore provision of multiple **`ref-list`** elements must be avoided.   
 -   The type of citation must be indicated through the **`@publication-type`** attribute for example **`@publication-type="journal"`**. 
     
 
@@ -383,56 +389,60 @@ The following citation elements are supported within the `**back/ref-list/ref**
 
 This element must only contain bibliographic reference elements. It should not include any punctuation or spacing. If this element is used, then punctuation and spacing will be added by Edify.
 
-`<ref` `id="bib13">`
-    `<element-citation publication-type="journal">`
-        `<person-group person-group-type="author">`
-            `<name>`
-                `<surname>Smith</surname>`
-                `<given-names>John</given-names>`
-            `</name>`
-            `<name>`
-                `<surname>Doe</surname>`
-                `<given-names>Jane</given-names>`
-            `</name>`
-        `</person-group>`
-        `<year iso-8601-date="2009">2009</year>`
-        `<article-title>Example article title</article-title>`
-        `<source>Example Journal Title</source>`
-        `<volume>5</volume>`
-        `<issue>2</issue>`
-        `<fpage>10</fpage>`
-        `<lpage>20</lpage>`
-        `<pub-id` `pub-id-type="doi">10.1371/journal.pcbi.1000392</pub-id>`
-    `</element-citation>`
-`</ref>`
+```xml
+<ref id="bib13">
+    <element-citation publication-type="journal">
+        <person-group person-group-type="author">
+            <name>`
+                <surname>Smith</surname>
+                <given-names>John</given-names>
+            </name>
+            <name>
+                <surname>Doe</surname>
+                <given-names>Jane</given-names>
+            </name>
+        </person-group>
+        <year iso-8601-date="2009">2009</year>
+        <article-title>Example article title</article-title>
+        <source>Example Journal Title</source>
+        <volume>5</volume>
+        <issue>2</issue>
+        <fpage>10</fpage>
+        <lpage>20</lpage>
+        <pub-id` `pub-id-type="doi">10.1371/journal.pcbi.1000392</pub-id>
+    </element-citation>
+</ref>
+```
 
 ### mixed-citation
 
 This element is expected to contain bibliographic reference elements as well as punctuation and spacing. For such self-punctuated references, Edify will display the content of the reference as is and will not attempt to add any punctuation or spacing.
 
-`<ref id="bib12">`
-    `<mixed-citation publication-type="journal">`
-        `<person-group person-group-type="author">`
-            `<string-name>`
-                `<surname>Smith</surname>, <given-names>John</given-names>`
-            `</string-name>`
-        `</person-group>.`
-        `<article-title>Example article title</article-title>.`
-        `<source>Example Journal Title</source>.`
-        `<year>2011</year>`
-        `<volume>8</volume>:`
-        `<fpage>506</fpage>-`
-        `<lpage>515</lpage>.`
-    `</mixed-citation>`
-`</ref>`
+```xml
+<ref id="bib12">
+    <mixed-citation publication-type="journal">
+        <person-group person-group-type="author">
+            <string-name>
+                <surname>Smith</surname>, <given-names>John</given-names>
+            </string-name>
+        </person-group>.
+        <article-title>Example article title</article-title>.
+        <source>Example Journal Title</source>.
+        <year>2011</year>
+        <volume>8</volume>:
+        <fpage>506</fpage>-
+        <lpage>515</lpage>.
+    </mixed-citation>
+</ref>
+```
 
 ### nlm-citation
 
 JATS 1.1 has deprecated this element. So Edify strongly recommends the use of element-citation or mixed-citation.
 
--   Footnotes should be included in an **`fn-group`** element, with each footnote in an **`fn`** element.
--   The **`fn`** element must have an **`@id`** attribute if it is linked from elsewhere in the content using an **`xref`** element. 
--   If the **`fn-group`** element does not contain a **`title`** element with the title text for the footnotes section, then Edify will insert a default title "Notes". Please use the **`title`** element if you wish to specify your own section title e.g. **`<fn-group><title>Footnotes</title><fn id=...`**
+- Footnotes should be included in an **`fn-group`** element, with each footnote in an **`fn`** element.
+- The **`fn`** element must have an **`@id`** attribute if it is linked from elsewhere in the content using an **`xref`** element. 
+- If the **`fn-group`** element does not contain a **`title`** element with the title text for the footnotes section, then Edify will insert a default title "Notes". Please use the **`title`** element if you wish to specify your own section title e.g. **`<fn-group><title>Footnotes</title><fn id=...`**
 
 ## Language codes
 
