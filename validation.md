@@ -40,7 +40,7 @@ Make sure to use the correct path! It can be absolute or relative.
 ## validating
 Take the following steps:
 
-1. download the schema _and all accompanying files_ from the [[NLM site](https://jats.nlm.nih.gov/publishing/tag-library/1.2/chapter/which-dtd.html)
+1. download the schema _and all accompanying files_ from the [NLM site](https://jats.nlm.nih.gov/publishing/tag-library/1.2/chapter/which-dtd.html)
 2. Go into the folder with all of the files. You will see several DTDs. Open `mathml3.dtd` and go to the very bottom of the document. Look for these lines:
 
 ```xml
