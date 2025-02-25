@@ -440,6 +440,8 @@ This element is expected to contain bibliographic reference elements as well as 
 
 JATS 1.1 has deprecated this element. So Edify strongly recommends the use of element-citation or mixed-citation.
 
+### Footnotes
+
 - Footnotes should be included in an **`fn-group`** element, with each footnote in an **`fn`** element.
 - The **`fn`** element must have an **`@id`** attribute if it is linked from elsewhere in the content using an **`xref`** element. 
 - If the **`fn-group`** element does not contain a **`title`** element with the title text for the footnotes section, then Edify will insert a default title "Notes". Please use the **`title`** element if you wish to specify your own section title e.g. **`<fn-group><title>Footnotes</title><fn id=...`**
