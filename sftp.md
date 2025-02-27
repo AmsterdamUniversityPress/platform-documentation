@@ -5,7 +5,6 @@ Often called "FTP" but really a different thing.
 ## users
 There are multiple users. Each user has access only to _their_ folders. I don't know if there is an admin user that can see all.
 
-
 ## instances
 There are instances for content and for suppmements. Both for QA and PROD. I don;t know if there are more.
 
