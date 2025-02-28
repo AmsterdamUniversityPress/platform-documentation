@@ -71,10 +71,10 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 - [Open Authentication](https://amsterdamuniversitypress.github.io/platform-documentation/openauthentication)
 - [OpenAthens](https://amsterdamuniversitypress.github.io/platform-documentation/openathens)
 - [Proxy](https://amsterdamuniversitypress.github.io/platform-documentation/proxy)
-- [Setting up access](https://amsterdamuniversitypress.github.io/platform-documentation/settingupaccess)
-- [Shibboleth](https://amsterdamuniversitypress.github.io/platform-documentation/shibboleth)
-- [SSO](https://amsterdamuniversitypress.github.io/platform-documentation/sso)
-- [Open Access](https://amsterdamuniversitypress.github.io/platform-documentation/openaccess)
+- [Setting up access](settingupaccess.md)
+- [Shibboleth](shibboleth.md)
+- [SSO](sso.md)
+- [Open Access](openaccess.md)
 
 ### imprints
 - [Imprints](https://amsterdamuniversitypress.github.io/platform-documentation/imprints)
@@ -82,6 +82,7 @@ This is a how-to and explainer of things to do with AUP Online. Work in progress
 ### procedures
 - [how to publish a new journal online](newonlinepublication.md)
 - [how to take over a title from another publisher](acquiringatitle.md)
+- [how to create a new journal](creatingnewjournal.md)
 
 ### see also
 - [Resources](https://amsterdamuniversitypress.github.io/platform-documentation/resources)
