@@ -14,5 +14,5 @@ Navigate to the homepage of the parent content item for the content you wish to 
 Creating a new book works in the same way.
 
 ## see also
-- [Content Ediitng Tool in Confluence](https://confluence.ingenta.com/confluence/display/IEH/Content+Editing+Tool)
+- [Content Editing Tool in Confluence](https://confluence.ingenta.com/confluence/display/IEH/Content+Editing+Tool)
 
