@@ -14,7 +14,11 @@ Navigate to the homepage of the parent content item for the content you wish to 
 Creating a new book works in the same way.
 
 ## ooops I made a mistake
-Please note that in general, if content identifiers i.e. URLs are changing then it can impact aspects such as access licenses for the content  through subscriptions and ecommerce purchases because the licenses are tied to the content URLs. 
+Did you create an item in the wrong place? Delete it and create it again. Keep in mind the following. 
+
+If you are simply removing a few articles without intending to delete the issue itself, then you don't need to delete the issue. If you want to get rid of the entire issue itself, then you need to delete the issue and its articles. 
+
+Please note that in general, if content identifiers i.e. URLs are changing then it can impact aspects such as access licenses for the content  through subscriptions and ecommerce purchases because the licenses are tied to the content URLs.
 
 ## see also
 - [Content Editing Tool in Confluence](https://confluence.ingenta.com/confluence/display/IEH/Content+Editing+Tool)
