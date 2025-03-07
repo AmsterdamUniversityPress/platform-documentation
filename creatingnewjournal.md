@@ -13,6 +13,9 @@ Navigate to the homepage of the parent content item for the content you wish to 
 
 Creating a new book works in the same way.
 
+## ooops I made a mistake
+Please note that in general, if content identifiers i.e. URLs are changing then it can impact aspects such as access licenses for the content  through subscriptions and ecommerce purchases because the licenses are tied to the content URLs. 
+
 ## see also
 - [Content Editing Tool in Confluence](https://confluence.ingenta.com/confluence/display/IEH/Content+Editing+Tool)
 
