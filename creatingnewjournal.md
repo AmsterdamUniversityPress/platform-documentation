@@ -6,6 +6,7 @@ Navigate to the homepage of the parent content item for the content you wish to 
 2. go to the home page of the publisher (= imprint) of the new journal. For AUP, that would be `/content/aup`
 3. hover over the left side tools menu and click "Create new journal"
 4. fill in the modal (= large popup)
+5. the ID for a journal is journals/<ISSN>` **and not simply `<ISSN>`**!
 
 ## some context
 
@@ -13,8 +14,8 @@ Navigate to the homepage of the parent content item for the content you wish to 
 
 Creating a new book works in the same way.
 
-## ooops I made a mistake
-Did you create an item in the wrong place? Delete it and create it again. Keep in mind the following. 
+## oops I made a mistake
+Did you create an item with some sort of error in  it? Edit the journal and correct it. If that is not possible, delete it and create it again. Keep in mind the following. 
 
 If you are simply removing a few articles without intending to delete the issue itself, then you don't need to delete the issue. If you want to get rid of the entire issue itself, then you need to delete the issue and its articles. 
 
