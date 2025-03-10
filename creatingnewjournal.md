@@ -6,11 +6,11 @@ Navigate to the homepage of the parent content item for the content you wish to 
 2. go to the home page of the publisher (= imprint) of the new journal. For AUP, that would be `/content/aup`
 3. hover over the left side tools menu and click "Create new journal"
 4. fill in the modal (= large popup)
-5. the ID for a journal is journals/<ISSN>` **and not simply `<ISSN>` **
+5. the ID for a journal is `journals/<ISSN>` **and not simply `<ISSN>`**!
 
 ## some context
 
-"Creating a new journal" is one of many "create a new ...". For example , it is possible to create a new journal issue or new journal article. In that case, you go to the home page of the journal and then do as described above.
+"Creating a new journal" is one of many "create a new ...". For example, it is possible to create a new journal issue or new journal article. In that case, you go to the home page of the journal and then do as described above.
 
 Creating a new book works in the same way.
 
