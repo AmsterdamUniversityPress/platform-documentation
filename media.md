@@ -29,11 +29,13 @@ element | required attributes | notes
 `<caption>` | | Used to provide the caption for the  figure
 `<copyright>/<copyright-statement>` | | Used to provide copyright text for the figure. If this is not provided, the copyright for the content item (book, article. chapter) is used in the site.
   
-Please note that tables supplied within fig tags are not supported within Ingenta Edify.
+Please note that tables supplied within fig tags are not supported within Edify.
 
 ### Inline graphics
 
 Inline graphics appear within text and are tagged using the inline-graphic element. An `<inline-graphic>` must have an attribute `@xlink:href`, whose value must be the exact file name of the image with the extension and without any folder names. The file name of the image must be unique within the issue or book. 
+
+### Tables
 
 Tables are tagged using the `<table-wrap>` element.  They should be placed after the paragraph where they have been first cited and not within the paragraph. If more than one table is cited within a paragraph they should be placed in the order in which they are cited.
 
